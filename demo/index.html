@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SageUI - Component Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sage: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                            950: '#052e16'
+                        },
+                        forest: {
+                            50: '#f7fee7',
+                            100: '#ecfccb',
+                            200: '#d9f99d',
+                            300: '#bef264',
+                            400: '#a3e635',
+                            500: '#84cc16',
+                            600: '#65a30d',
+                            700: '#4d7c0f',
+                            800: '#3f6212',
+                            900: '#365314',
+                            950: '#1a2e05'
+                        },
+                        emerald: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            200: '#a7f3d0',
+                            300: '#6ee7b7',
+                            400: '#34d399',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                            950: '#022c22'
+                        }
+                    },
+                    borderRadius: {
+                        'sage': '0.75rem'
+                    },
+                    boxShadow: {
+                        'sage': '0 4px 6px -1px rgba(34, 197, 94, 0.1), 0 2px 4px -1px rgba(34, 197, 94, 0.06)',
+                        'sage-lg': '0 10px 15px -3px rgba(34, 197, 94, 0.1), 0 4px 6px -2px rgba(34, 197, 94, 0.05)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* SageUI Component Styles */
+        .btn {
+            @apply inline-flex items-center justify-center font-medium transition-all duration-200;
+            @apply focus:outline-none focus:ring-2 focus:ring-offset-2;
+            @apply disabled:opacity-50 disabled:pointer-events-none;
+            @apply border border-transparent;
+        }
+
+        .btn-primary {
+            @apply bg-sage-500 text-white hover:bg-sage-600 focus:ring-sage-500 active:bg-sage-700;
+            @apply shadow-sm hover:shadow-sage;
+        }
+
+        .btn-secondary {
+            @apply bg-forest-500 text-white hover:bg-forest-600 focus:ring-forest-500 active:bg-forest-700;
+        }
+
+        .btn-accent {
+            @apply bg-emerald-500 text-white hover:bg-emerald-600 focus:ring-emerald-500 active:bg-emerald-700;
+        }
+
+        .btn-ghost {
+            @apply bg-transparent text-sage-600 hover:bg-sage-50 focus:ring-sage-500;
+        }
+
+        .btn-outline {
+            @apply border-2 border-sage-500 text-sage-600 hover:bg-sage-500 hover:text-white focus:ring-sage-500;
+        }
+
+        .btn-sm {
+            @apply px-3 py-1.5 text-sm rounded-md;
+        }
+
+        .btn-md {
+            @apply px-4 py-2 text-base rounded-lg;
+        }
+
+        .btn-lg {
+            @apply px-6 py-3 text-lg rounded-lg;
+        }
+
+        .btn-xl {
+            @apply px-8 py-4 text-xl rounded-xl;
+        }
+
+        .card {
+            @apply bg-white rounded-sage overflow-hidden;
+        }
+
+        .card-bordered {
+            @apply border-2 border-sage-200;
+        }
+
+        .card-shadow {
+            @apply shadow-sage-lg border border-gray-100;
+        }
+
+        .card-body {
+            @apply p-6;
+        }
+
+        .card-title {
+            @apply text-xl font-semibold text-gray-900 mb-2;
+        }
+
+        .alert {
+            @apply flex items-center p-4 rounded-lg border;
+        }
+
+        .alert-success {
+            @apply bg-emerald-50 border-emerald-200 text-emerald-800;
+        }
+
+        .alert-warning {
+            @apply bg-amber-50 border-amber-200 text-amber-800;
+        }
+
+        .alert-error {
+            @apply bg-red-50 border-red-200 text-red-800;
+        }
+
+        .alert-info {
+            @apply bg-sky-50 border-sky-200 text-sky-800;
+        }
+
+        .input {
+            @apply block w-full font-medium transition-colors rounded-lg;
+            @apply focus:outline-none focus:ring-2 focus:ring-offset-2;
+            @apply disabled:opacity-50 disabled:cursor-not-allowed;
+            @apply border border-gray-300 bg-white text-gray-900 placeholder-gray-500;
+            @apply focus:border-sage-500 focus:ring-sage-500;
+            @apply px-4 py-2;
+        }
+
+        .shadow-sage {
+            box-shadow: 0 4px 6px -1px rgba(34, 197, 94, 0.1), 0 2px 4px -1px rgba(34, 197, 94, 0.06);
+        }
+
+        .shadow-sage-lg {
+            box-shadow: 0 10px 15px -3px rgba(34, 197, 94, 0.1), 0 4px 6px -2px rgba(34, 197, 94, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-sage-400 to-sage-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">🌿</span>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-900">SageUI</h1>
+                        <p class="text-sm text-gray-500">Component Library Demo</p>
+                    </div>
+                </div>
+                <div class="text-right">
+                    <p class="text-sm font-medium text-sage-600">v1.0.0</p>
+                    <p class="text-xs text-gray-500">Free & Open Source</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        
+        <!-- Introduction -->
+        <section class="mb-12">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Welcome to SageUI 🌿</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    A beautiful, nature-inspired component library for Tailwind CSS. 
+                    Built with accessibility, customization, and developer experience in mind.
+                </p>
+            </div>
+        </section>
+
+        <!-- Buttons Section -->
+        <section class="mb-12">
+            <h3 class="text-2xl font-semibold text-gray-900 mb-6">Buttons</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Button Variants -->
+                <div class="card card-shadow">
+                    <div class="card-body">
+                        <h4 class="card-title">Button Variants</h4>
+                        <div class="space-y-4">
+                            <div class="flex flex-wrap gap-3">
+                                <button class="btn btn-primary btn-md">Primary</button>
+                                <button class="btn btn-secondary btn-md">Secondary</button>
+                                <button class="btn btn-accent btn-md">Accent</button>
+                                <button class="btn btn-ghost btn-md">Ghost</button>
+                                <button class="btn btn-outline btn-md">Outline</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button Sizes -->
+                <div class="card card-shadow">
+                    <div class="card-body">
+                        <h4 class="card-title">Button Sizes</h4>
+                        <div class="space-y-4">
+                            <div class="flex flex-wrap items-center gap-3">
+                                <button class="btn btn-primary btn-sm">Small</button>
+                                <button class="btn btn-primary btn-md">Medium</button>
+                                <button class="btn btn-primary btn-lg">Large</button>
+                                <button class="btn btn-primary btn-xl">Extra Large</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cards Section -->
+        <section class="mb-12">
+            <h3 class="text-2xl font-semibold text-gray-900 mb-6">Cards</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="card card-shadow">
+                    <div class="card-body">
+                        <h4 class="card-title">Shadow Card</h4>
+                        <p class="text-gray-600">This card has a subtle sage-colored shadow that gives it depth and elegance.</p>
+                        <button class="btn btn-primary btn-sm mt-4">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="card card-bordered">
+                    <div class="card-body">
+                        <h4 class="card-title">Bordered Card</h4>
+                        <p class="text-gray-600">A clean card with a sage-colored border for a more defined look.</p>
+                        <button class="btn btn-outline btn-sm mt-4">Explore</button>
+                    </div>
+                </div>
+
+                <div class="card border border-gray-200">
+                    <div class="card-body">
+                        <h4 class="card-title">Default Card</h4>
+                        <p class="text-gray-600">Simple and clean default card styling with minimal borders.</p>
+                        <button class="btn btn-ghost btn-sm mt-4">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Alerts Section -->
+        <section class="mb-12">
+            <h3 class="text-2xl font-semibold text-gray-900 mb-6">Alerts</h3>
+            <div class="space-y-4 max-w-2xl">
+                <div class="alert alert-success">
+                    <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    Success! Your action was completed successfully.
+                </div>
+
+                <div class="alert alert-warning">
+                    <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                    </svg>
+                    Warning! Please check your input and try again.
+                </div>
+
+                <div class="alert alert-error">
+                    <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
+                    </svg>
+                    Error! Something went wrong. Please try again.
+                </div>
+
+                <div class="alert alert-info">
+                    <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+                    </svg>
+                    Info! Here's some useful information for you.
+                </div>
+            </div>
+        </section>
+
+        <!-- Forms Section -->
+        <section class="mb-12">
+            <h3 class="text-2xl font-semibold text-gray-900 mb-6">Forms</h3>
+            <div class="card card-shadow max-w-md">
+                <div class="card-body">
+                    <h4 class="card-title">Contact Form</h4>
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                            <input type="text" class="input" placeholder="Enter your name">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input type="email" class="input" placeholder="Enter your email">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea class="input resize-none" rows="3" placeholder="Enter your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-md w-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Color Palette Section -->
+        <section class="mb-12">
+            <h3 class="text-2xl font-semibold text-gray-900 mb-6">Color Palette</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Sage Colors -->
+                <div class="card card-shadow">
+                    <div class="card-body">
+                        <h4 class="card-title">Sage (Primary)</h4>
+                        <div class="space-y-2">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 rounded bg-sage-100"></div>
+                                <span class="text-sm">sage-100</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 rounded bg-sage-300"></div>
+                                <span class="text-sm">sage-300</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 rounded bg-sage-500"></div>
+                                <span class="text-sm">sage-500</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 rounded bg-sage-700"></div>
+                                <span class="text-sm">sage-700</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 rounded bg-sage-900"></div>
+                                <span class="text-sm">sage-900</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Forest Colors -->
+                <div class="card card-shadow">
+                    <div class="card-body">
+                        <h4 class="card-title">Forest (Secondary)</h4>
+                        <div class="space-y-2">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 rounded bg-forest-100"></div>
+                                <span class="text-sm">forest-100</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 rounded bg-forest-300"></div>
+                                <span class="text-sm">forest-300</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 rounded bg-forest-500"></div>
+                                <span class="text-sm">forest-500</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 rounded bg-forest-700"></div>
+                                <span class="text-sm">forest-700</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 rounded bg-forest-900"></div>
+                                <span class="text-sm">forest-900</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Emerald Colors -->
+                <div class="card card-shadow">
+                    <div class="card-body">
+                        <h4 class="card-title">Emerald (Accent)</h4>
+                        <div class="space-y-2">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 rounded bg-emerald-100"></div>
+                                <span class="text-sm">emerald-100</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 rounded bg-emerald-300"></div>
+                                <span class="text-sm">emerald-300</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 rounded bg-emerald-500"></div>
+                                <span class="text-sm">emerald-500</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 rounded bg-emerald-700"></div>
+                                <span class="text-sm">emerald-700</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 rounded bg-emerald-900"></div>
+                                <span class="text-sm">emerald-900</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Usage Example -->
+                <div class="card card-shadow">
+                    <div class="card-body">
+                        <h4 class="card-title">Usage Example</h4>
+                        <div class="space-y-3">
+                            <div class="p-3 bg-sage-50 rounded-lg border border-sage-200">
+                                <code class="text-xs text-sage-700">bg-sage-500</code>
+                            </div>
+                            <div class="p-3 bg-forest-50 rounded-lg border border-forest-200">
+                                <code class="text-xs text-forest-700">text-forest-600</code>
+                            </div>
+                            <div class="p-3 bg-emerald-50 rounded-lg border border-emerald-200">
+                                <code class="text-xs text-emerald-700">border-emerald-300</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-2 mb-4">
+                    <span class="text-2xl">🌿</span>
+                    <span class="text-lg font-semibold text-gray-900">SageUI</span>
+                </div>
+                <p class="text-gray-600 mb-4">
+                    Free and open-source component library for Tailwind CSS
+                </p>
+                <div class="flex justify-center space-x-6 text-sm">
+                    <a href="#" class="text-sage-600 hover:text-sage-700">Documentation</a>
+                    <a href="#" class="text-sage-600 hover:text-sage-700">GitHub</a>
+                    <a href="#" class="text-sage-600 hover:text-sage-700">NPM</a>
+                    <a href="#" class="text-sage-600 hover:text-sage-700">License</a>
+                </div>
+                <p class="text-xs text-gray-500 mt-4">
+                    Made with 💚 by the SageUI team
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

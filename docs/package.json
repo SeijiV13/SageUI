@@ -1,0 +1,21 @@
+{
+  "name": "sageui-docs",
+  "version": "1.0.0",
+  "description": "Documentation for SageUI component library",
+  "scripts": {
+    "dev": "npm run build-css && vitepress dev",
+    "build": "npm run build-css && vitepress build",
+    "preview": "vitepress preview",
+    "build-css": "tailwindcss -i ./styles.css -o ./.vitepress/theme/compiled.css --watch",
+    "build-css-once": "tailwindcss -i ./styles.css -o ./.vitepress/theme/compiled.css",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.12",
+    "vitepress": "^1.0.0"
+  }
+}

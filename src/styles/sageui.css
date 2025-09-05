@@ -1,0 +1,730 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* SageUI Base Styles */
+@layer base {
+  :root {
+    --sage-primary: 34 197 94;
+    --sage-secondary: 132 204 22;
+    --sage-accent: 16 185 129;
+    --sage-success: 5 150 105;
+    --sage-warning: 217 119 6;
+    --sage-error: 220 38 38;
+    --sage-info: 2 132 199;
+  }
+}
+
+/* SageUI Component Styles */
+@layer components {
+  
+  /* Buttons */
+  .btn {
+    @apply inline-flex items-center justify-center font-medium transition-all duration-200;
+    @apply focus:outline-none focus:ring-2 focus:ring-offset-2;
+    @apply disabled:opacity-50 disabled:pointer-events-none;
+    @apply border border-transparent;
+    @apply bg-gray-100 text-gray-700 hover:bg-gray-200 focus:ring-gray-500;
+    @apply px-4 py-2 text-base rounded-lg;
+  }
+
+  .btn-primary {
+    @apply bg-sage-500 text-white hover:bg-sage-600 focus:ring-sage-500 active:bg-sage-700;
+    @apply shadow-sm hover:shadow-sage;
+  }
+
+  .btn-secondary {
+    @apply bg-forest-500 text-white hover:bg-forest-600 focus:ring-forest-500 active:bg-forest-700;
+  }
+
+  .btn-accent {
+    @apply bg-emerald-500 text-white hover:bg-emerald-600 focus:ring-emerald-500 active:bg-emerald-700;
+  }
+
+  .btn-ghost {
+    @apply bg-transparent text-sage-600 hover:bg-sage-50 focus:ring-sage-500;
+  }
+
+  .btn-outline {
+    @apply border-2 border-sage-500 text-sage-600 hover:bg-sage-500 hover:text-white focus:ring-sage-500;
+  }
+
+  .btn-sm {
+    @apply px-3 py-1.5 text-sm rounded-md;
+  }
+
+  .btn-md {
+    @apply px-4 py-2 text-base rounded-lg;
+  }
+
+  .btn-lg {
+    @apply px-6 py-3 text-lg rounded-lg;
+  }
+
+  .btn-xl {
+    @apply px-8 py-4 text-xl rounded-xl;
+  }
+
+  .btn-block {
+    @apply w-full;
+  }
+
+  /* Cards */
+  .card {
+    @apply bg-white overflow-hidden;
+  }
+
+  .card-bordered {
+    @apply border-2 border-sage-200;
+  }
+
+  .card-shadow {
+    @apply shadow-sage-lg border border-gray-100;
+  }
+
+  .card-body {
+    @apply p-6;
+  }
+
+  .card-title {
+    @apply text-xl font-semibold text-gray-900 mb-2;
+  }
+
+  .card-content {
+    @apply text-gray-600;
+  }
+
+  /* Alerts */
+  .alert {
+    @apply flex items-center p-4 rounded-lg border;
+  }
+
+  .alert-success {
+    @apply bg-emerald-50 border-emerald-200 text-emerald-800;
+  }
+
+  .alert-warning {
+    @apply bg-amber-50 border-amber-200 text-amber-800;
+  }
+
+  .alert-error {
+    @apply bg-red-50 border-red-200 text-red-800;
+  }
+
+  .alert-info {
+    @apply bg-sky-50 border-sky-200 text-sky-800;
+  }
+
+  /* Forms */
+  .input {
+    @apply block w-full font-medium transition-colors;
+    @apply focus:outline-none focus:ring-2 focus:ring-offset-2;
+    @apply disabled:opacity-50 disabled:cursor-not-allowed;
+    @apply border border-gray-300 bg-white text-gray-900 placeholder-gray-500;
+    @apply focus:border-sage-500 focus:ring-sage-500;
+  }
+
+  .input-sm {
+    @apply px-3 py-1.5 text-sm rounded-md;
+  }
+
+  .input-md {
+    @apply px-4 py-2 text-base rounded-lg;
+  }
+
+  .input-lg {
+    @apply px-6 py-3 text-lg rounded-lg;
+  }
+
+  .input-bordered {
+    @apply border-2 border-sage-300 focus:border-sage-500;
+  }
+
+  .input-ghost {
+    @apply border-transparent bg-gray-50 focus:bg-white focus:border-sage-500;
+  }
+
+  .input-error {
+    @apply border-red-300 text-red-900 placeholder-red-400 focus:border-red-500 focus:ring-red-500;
+  }
+
+  /* Form Controls */
+  .sage-form-control {
+    @apply flex flex-col gap-2;
+  }
+
+  .label {
+    @apply flex items-center cursor-pointer select-none;
+  }
+
+  .label-text {
+    @apply text-sm font-medium text-gray-700;
+  }
+
+  /* Label spacing variants */
+  .label.justify-start {
+    @apply justify-start gap-3;
+  }
+
+  .label:not(.justify-start) {
+    @apply justify-between;
+  }
+
+  /* Radio Buttons */
+  .sage-radio {
+    @apply h-4 w-4 border border-gray-300 rounded-full;
+    @apply text-sage-600 focus:ring-2 focus:ring-sage-500 focus:ring-offset-0;
+    @apply transition-all duration-200 cursor-pointer;
+    @apply checked:bg-sage-600 checked:border-sage-600;
+    @apply disabled:opacity-50 disabled:cursor-not-allowed;
+    @apply appearance-none relative;
+  }
+
+  .sage-radio:checked::after {
+    content: '';
+    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+    @apply w-2 h-2 bg-white rounded-full;
+  }
+
+  /* Radio Button Sizes */
+  .sage-radio-xs {
+    @apply h-3 w-3;
+  }
+
+  .sage-radio-xs:checked::after {
+    @apply w-1.5 h-1.5;
+  }
+
+  .sage-radio-sm {
+    @apply h-3.5 w-3.5;
+  }
+
+  .sage-radio-sm:checked::after {
+    @apply w-1.5 h-1.5;
+  }
+
+  .sage-radio-lg {
+    @apply h-5 w-5;
+  }
+
+  .sage-radio-lg:checked::after {
+    @apply w-2.5 h-2.5;
+  }
+
+  /* Radio Button Colors */
+  .sage-radio-primary {
+    @apply text-sage-600 focus:ring-sage-500;
+    @apply checked:bg-sage-600 checked:border-sage-600;
+  }
+
+  .sage-radio-secondary {
+    @apply text-forest-600 focus:ring-forest-500;
+    @apply checked:bg-forest-600 checked:border-forest-600;
+  }
+
+  .sage-radio-success {
+    @apply text-emerald-600 focus:ring-emerald-500;
+    @apply checked:bg-emerald-600 checked:border-emerald-600;
+  }
+
+  .sage-radio-warning {
+    @apply text-amber-600 focus:ring-amber-500;
+    @apply checked:bg-amber-600 checked:border-amber-600;
+  }
+
+  .sage-radio-error {
+    @apply text-red-600 focus:ring-red-500;
+    @apply checked:bg-red-600 checked:border-red-600;
+  }
+
+  /* Checkboxes */
+  .sage-checkbox {
+    @apply h-4 w-4 border border-gray-300 rounded;
+    @apply text-sage-600 focus:ring-2 focus:ring-sage-500 focus:ring-offset-0;
+    @apply transition-all duration-200 cursor-pointer;
+    @apply checked:bg-sage-600 checked:border-sage-600;
+    @apply disabled:opacity-50 disabled:cursor-not-allowed;
+    @apply appearance-none relative;
+  }
+
+  .sage-checkbox:checked::after {
+    content: '';
+    @apply absolute top-0.5 left-1 transform;
+    @apply w-1.5 h-2.5 border-white border-r-2 border-b-2 rotate-45;
+  }
+
+  .sage-checkbox:indeterminate {
+    @apply bg-sage-600 border-sage-600;
+  }
+
+  .sage-checkbox:indeterminate::after {
+    content: '';
+    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+    @apply w-2 h-0.5 bg-white;
+    border: none;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Checkbox Sizes */
+  .sage-checkbox-xs {
+    @apply h-3 w-3;
+  }
+
+  .sage-checkbox-xs:checked::after {
+    @apply top-0 left-0.5 w-1 h-2;
+  }
+
+  .sage-checkbox-xs:indeterminate::after {
+    @apply w-1.5 h-0.5;
+  }
+
+  .sage-checkbox-sm {
+    @apply h-3.5 w-3.5;
+  }
+
+  .sage-checkbox-sm:checked::after {
+    @apply top-0.5 left-1 w-1 h-2;
+  }
+
+  .sage-checkbox-sm:indeterminate::after {
+    @apply w-1.5 h-0.5;
+  }
+
+  .sage-checkbox-lg {
+    @apply h-5 w-5;
+  }
+
+  .sage-checkbox-lg:checked::after {
+    @apply top-0.5 left-1.5 w-2 h-3;
+  }
+
+  .sage-checkbox-lg:indeterminate::after {
+    @apply w-2.5 h-0.5;
+  }
+
+  /* Checkbox Colors */
+  .sage-checkbox-primary {
+    @apply text-sage-600 focus:ring-sage-500;
+    @apply checked:bg-sage-600 checked:border-sage-600;
+  }
+
+  .sage-checkbox-primary:indeterminate {
+    @apply bg-sage-600 border-sage-600;
+  }
+
+  .sage-checkbox-secondary {
+    @apply text-forest-600 focus:ring-forest-500;
+    @apply checked:bg-forest-600 checked:border-forest-600;
+  }
+
+  .sage-checkbox-secondary:indeterminate {
+    @apply bg-forest-600 border-forest-600;
+  }
+
+  .sage-checkbox-success {
+    @apply text-emerald-600 focus:ring-emerald-500;
+    @apply checked:bg-emerald-600 checked:border-emerald-600;
+  }
+
+  .sage-checkbox-success:indeterminate {
+    @apply bg-emerald-600 border-emerald-600;
+  }
+
+  .sage-checkbox-warning {
+    @apply text-amber-600 focus:ring-amber-500;
+    @apply checked:bg-amber-600 checked:border-amber-600;
+  }
+
+  .sage-checkbox-warning:indeterminate {
+    @apply bg-amber-600 border-amber-600;
+  }
+
+  .sage-checkbox-error {
+    @apply text-red-600 focus:ring-red-500;
+    @apply checked:bg-red-600 checked:border-red-600;
+  }
+
+  .sage-checkbox-error:indeterminate {
+    @apply bg-red-600 border-red-600;
+  }
+
+  /* Select Dropdowns */
+  .sage-select {
+    @apply block w-full font-medium transition-colors;
+    @apply focus:outline-none focus:ring-2 focus:ring-offset-2;
+    @apply disabled:opacity-50 disabled:cursor-not-allowed;
+    @apply border border-gray-300 bg-white text-gray-900 placeholder-gray-500;
+    @apply focus:border-sage-500 focus:ring-sage-500;
+    @apply appearance-none cursor-pointer;
+    @apply px-4 py-2 text-base rounded-lg;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem;
+  }
+
+  .sage-select:focus {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%2322c55e' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+  }
+
+  /* Select Sizes */
+  .sage-select-sm {
+    @apply px-3 py-1.5 text-sm rounded-md;
+    background-size: 1.25em 1.25em;
+    background-position: right 0.5rem center;
+    padding-right: 2.25rem;
+  }
+
+  .sage-select-md {
+    @apply px-4 py-2 text-base rounded-lg;
+    background-size: 1.5em 1.5em;
+    background-position: right 0.5rem center;
+    padding-right: 2.5rem;
+  }
+
+  .sage-select-lg {
+    @apply px-6 py-3 text-lg rounded-lg;
+    background-size: 1.75em 1.75em;
+    background-position: right 0.5rem center;
+    padding-right: 3rem;
+  }
+
+  /* Select Colors */
+  .sage-select-primary {
+    @apply border-sage-300 focus:border-sage-500 focus:ring-sage-500;
+  }
+
+  .sage-select-secondary {
+    @apply border-forest-300 focus:border-forest-500 focus:ring-forest-500;
+  }
+
+  .sage-select-secondary:focus {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%2384cc16' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+  }
+
+  .sage-select-success {
+    @apply border-emerald-300 focus:border-emerald-500 focus:ring-emerald-500;
+  }
+
+  .sage-select-success:focus {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%2310b981' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+  }
+
+  .sage-select-warning {
+    @apply border-amber-300 focus:border-amber-500 focus:ring-amber-500;
+  }
+
+  .sage-select-warning:focus {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23f59e0b' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+  }
+
+  .sage-select-error {
+    @apply border-red-300 focus:border-red-500 focus:ring-red-500;
+  }
+
+  .sage-select-error:focus {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23ef4444' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+  }
+
+  /* Select Variants */
+  .sage-select-bordered {
+    @apply border-2 border-sage-300 focus:border-sage-500;
+  }
+
+  .sage-select-ghost {
+    @apply border-transparent bg-gray-50 focus:bg-white focus:border-sage-500;
+  }
+
+  /* Multiple select styling */
+  .sage-select[multiple] {
+    background-image: none;
+    padding-right: 0.75rem;
+    @apply py-3 min-h-[6rem] max-h-48 overflow-y-auto;
+    scrollbar-width: thin;
+    scrollbar-color: #22c55e #f3f4f6;
+  }
+
+  .sage-select[multiple]::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .sage-select[multiple]::-webkit-scrollbar-track {
+    background: #f3f4f6;
+    border-radius: 3px;
+  }
+
+  .sage-select[multiple]::-webkit-scrollbar-thumb {
+    background: #22c55e;
+    border-radius: 3px;
+  }
+
+  .sage-select[multiple]::-webkit-scrollbar-thumb:hover {
+    background: #16a34a;
+  }
+
+  .sage-select[multiple] option {
+    @apply py-2 px-3 border-b border-gray-100 last:border-b-0;
+    @apply hover:bg-sage-50 transition-colors duration-150;
+  }
+
+  .sage-select[multiple] option:checked {
+    @apply bg-sage-600 text-white font-medium;
+  }
+
+  .sage-select[multiple] option:focus {
+    @apply bg-sage-100 outline-none;
+  }
+
+  /* Label styling */
+  .sage-label {
+    @apply block text-sm font-medium text-gray-700 mb-1;
+  }
+
+  .sage-label-text {
+    @apply text-gray-700 font-medium;
+  }
+
+  .sage-label-text-alt {
+    @apply text-xs text-gray-500 ml-auto;
+  }
+
+  /* Loading Spinner */
+  .loading {
+    @apply inline-block animate-spin rounded-full border-2 border-solid border-current border-r-transparent;
+    @apply motion-reduce:animate-[spin_1.5s_linear_infinite];
+  }
+
+  .loading-sm {
+    @apply h-4 w-4;
+  }
+
+  .loading-md {
+    @apply h-6 w-6;
+  }
+
+  .loading-lg {
+    @apply h-8 w-8;
+  }
+
+  /* Badges */
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .badge-primary {
+    @apply bg-sage-100 text-sage-800;
+  }
+
+  .badge-secondary {
+    @apply bg-forest-100 text-forest-800;
+  }
+
+  .badge-success {
+    @apply bg-emerald-100 text-emerald-800;
+  }
+
+  .badge-warning {
+    @apply bg-amber-100 text-amber-800;
+  }
+
+  .badge-error {
+    @apply bg-red-100 text-red-800;
+  }
+
+  .badge-info {
+    @apply bg-sky-100 text-sky-800;
+  }
+
+  /* Modal */
+  .modal {
+    @apply fixed inset-0 z-50 hidden;
+  }
+
+  .modal-open {
+    @apply flex items-center justify-center;
+  }
+
+  .modal-backdrop {
+    @apply absolute inset-0 bg-black bg-opacity-50;
+  }
+
+  .modal-box {
+    @apply relative bg-white rounded-lg shadow-xl z-10 max-h-[90vh] overflow-auto;
+  }
+
+  .modal-sm {
+    @apply max-w-sm;
+  }
+
+  .modal-md {
+    @apply max-w-md;
+  }
+
+  .modal-lg {
+    @apply max-w-lg;
+  }
+
+  .modal-xl {
+    @apply max-w-4xl;
+  }
+
+  .modal-full {
+    @apply max-w-full max-h-full m-4;
+  }
+
+  .modal-close {
+    @apply absolute top-4 right-4 p-2 rounded-full text-gray-400 hover:text-emerald-600 hover:bg-emerald-50 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2;
+  }
+
+  .modal-content {
+    @apply p-6;
+  }
+
+  /* Tooltip */
+  .tooltip {
+    @apply relative inline-block;
+  }
+
+  .tooltip-content {
+    @apply absolute z-50 px-2 py-1 text-sm text-white bg-gray-900 rounded opacity-0 pointer-events-none transition-opacity duration-200;
+  }
+
+  .tooltip-visible {
+    @apply opacity-100;
+  }
+
+  .tooltip-top .tooltip-content {
+    @apply bottom-full left-1/2 transform -translate-x-1/2 mb-1;
+  }
+
+  .tooltip-bottom .tooltip-content {
+    @apply top-full left-1/2 transform -translate-x-1/2 mt-1;
+  }
+
+  .tooltip-left .tooltip-content {
+    @apply right-full top-1/2 transform -translate-y-1/2 mr-1;
+  }
+
+  .tooltip-right .tooltip-content {
+    @apply left-full top-1/2 transform -translate-y-1/2 ml-1;
+  }
+
+  /* Dropdown */
+  .dropdown {
+    @apply relative inline-block;
+  }
+
+  .dropdown-menu {
+    @apply absolute z-50 hidden min-w-48 bg-white border border-gray-200 rounded-md shadow-lg;
+  }
+
+  .dropdown-open .dropdown-menu {
+    @apply block;
+  }
+
+  .dropdown-bottom-left .dropdown-menu {
+    @apply top-full left-0 mt-1;
+  }
+
+  .dropdown-bottom-right .dropdown-menu {
+    @apply top-full right-0 mt-1;
+  }
+
+  .dropdown-top-left .dropdown-menu {
+    @apply bottom-full left-0 mb-1;
+  }
+
+  .dropdown-top-right .dropdown-menu {
+    @apply bottom-full right-0 mb-1;
+  }
+
+  .dropdown-content {
+    @apply py-1 list-none m-0;
+  }
+
+  .dropdown-item {
+    @apply block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 no-underline;
+  }
+
+  .dropdown-item-disabled {
+    @apply text-gray-400 pointer-events-none;
+  }
+
+  .dropdown-separator {
+    @apply border-t border-gray-200 my-1;
+  }
+
+  /* Table */
+  .table-container {
+    @apply overflow-x-auto;
+  }
+
+  .table {
+    @apply w-full text-sm text-left text-gray-500;
+  }
+
+  .table-header {
+    @apply px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider bg-gray-50;
+  }
+
+  .table-cell {
+    @apply px-6 py-4 whitespace-nowrap;
+  }
+
+  .table-sortable {
+    @apply cursor-pointer hover:bg-emerald-50 select-none transition-colors;
+  }
+
+  .sort-indicator {
+    @apply inline-flex items-center justify-center;
+  }
+
+  .table-striped tbody tr:nth-child(even) {
+    @apply bg-gray-50;
+  }
+
+  .table-hover tbody tr:hover {
+    @apply bg-gray-100;
+  }
+
+  .table-bordered {
+    @apply border border-gray-200;
+  }
+
+  .table-bordered th,
+  .table-bordered td {
+    @apply border border-gray-200;
+  }
+
+  .table-compact .table-header {
+    @apply px-3 py-2;
+  }
+
+  .table-compact .table-cell {
+    @apply px-3 py-2;
+  }
+}
+
+/* SageUI Utilities */
+@layer utilities {
+  .text-sage {
+    color: rgb(var(--sage-primary));
+  }
+  
+  .bg-sage {
+    background-color: rgb(var(--sage-primary));
+  }
+  
+  .border-sage {
+    border-color: rgb(var(--sage-primary));
+  }
+
+  .shadow-sage {
+    box-shadow: 0 4px 6px -1px rgba(var(--sage-primary), 0.1), 0 2px 4px -1px rgba(var(--sage-primary), 0.06);
+  }
+
+  .shadow-sage-lg {
+    box-shadow: 0 10px 15px -3px rgba(var(--sage-primary), 0.1), 0 4px 6px -2px rgba(var(--sage-primary), 0.05);
+  }
+}

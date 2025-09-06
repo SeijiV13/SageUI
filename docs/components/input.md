@@ -160,32 +160,60 @@ The most basic input uses the `.input` class.
 
 ## Form Layout
 
-```html
-<div class="sage-form-control w-full max-w-xs">
-  <label class="sage-label">
-    <span class="sage-label-text">Email Address</span>
+<div class="demo-container">
+<div class="form-control w-full max-w-xs">
+  <label class="label">
+    <span class="label-text">Email Address</span>
   </label>
-  <input type="email" class="sage-input sage-input-bordered w-full max-w-xs" placeholder="your@email.com">
-  <label class="sage-label">
-    <span class="sage-label-text-alt">We'll never share your email</span>
+  <input type="email" class="input input-bordered w-full max-w-xs" placeholder="your@email.com">
+  <label class="label">
+    <span class="label-text-alt">We'll never share your email</span>
+  </label>
+</div>
+
+</div>
+
+```html
+<div class="form-control w-full max-w-xs">
+  <label class="label">
+    <span class="label-text">Email Address</span>
+  </label>
+  <input type="email" class="input input-bordered w-full max-w-xs" placeholder="your@email.com">
+  <label class="label">
+    <span class="label-text-alt">We'll never share your email</span>
   </label>
 </div>
 ```
+
+<div class="demo-container">
+<!-- With prefix -->
+  <div class="join">
+    <span class="join-item bg-base-200 px-3 flex items-center">Username</span>
+    <input type="text" class="input input-bordered join-item" placeholder="username">
+  </div>
+  <br>
+  <!-- With suffix -->
+  <div class="join">
+    <input type="text" class="input input-bordered join-item" placeholder="password">
+    <button class="btn btn-primary join-item">Save</button>
+  </div>
+
+</div>
 
 ## Input Group
 
 ```html
 <!-- With prefix -->
-<div class="sage-join">
-  <span class="sage-join-item bg-base-200 px-3 flex items-center">@</span>
-  <input type="text" class="sage-input sage-input-bordered sage-join-item" placeholder="username">
-</div>
-
-<!-- With suffix -->
-<div class="sage-join">
-  <input type="text" class="sage-input sage-input-bordered sage-join-item" placeholder="Search">
-  <button class="sage-btn sage-btn-primary sage-join-item">Go</button>
-</div>
+  <div class="join">
+    <span class="join-item bg-base-200 px-3 flex items-center">Username</span>
+    <input type="text" class="input input-bordered join-item" placeholder="username">
+  </div>
+  <br>
+  <!-- With suffix -->
+  <div class="join">
+    <input type="text" class="input input-bordered join-item" placeholder="password">
+    <button class="btn btn-primary join-item">Save</button>
+  </div>
 ```
 
 ## TypeScript Usage
@@ -232,55 +260,92 @@ input.onBlur(() => {
 
 | Class | Description |
 |-------|-------------|
-| `sage-input` | Base input styles |
-| `sage-input-bordered` | Adds border styling |
-| `sage-input-ghost` | Ghost/transparent styling |
-| `sage-input-xs` | Extra small size |
-| `sage-input-sm` | Small size |
-| `sage-input-lg` | Large size |
-| `sage-input-primary` | Primary color variant |
-| `sage-input-secondary` | Secondary color variant |
-| `sage-input-success` | Success color variant |
-| `sage-input-warning` | Warning color variant |
-| `sage-input-error` | Error color variant |
+| `input` | Base input styles |
+| `input-bordered` | Adds border styling |
+| `input-ghost` | Ghost/transparent styling |
+| `input-xs` | Extra small size |
+| `input-sm` | Small size |
+| `input-lg` | Large size |
+| `input-primary` | Primary color variant |
+| `input-secondary` | Secondary color variant |
+| `input-success` | Success color variant |
+| `input-warning` | Warning color variant |
+| `input-error` | Error color variant |
 
 ## Examples
 
 ### Login Form
+
+<div class="demo-container">
+<div class="card w-full max-w-sm bg-base-100 shadow-xl">
+  <div class="card-body">
+    <h2 class="card-title">Login</h2>
+    <div class="form-control">
+      <label class="label">
+        <span class="label-text">Email</span>
+      </label>
+      <input type="email" class="input input-bordered" placeholder="your@email.com" required>
+    </div>
+    <div class="form-control">
+      <label class="label">
+        <span class="label-text">Password</span>
+      </label>
+      <input type="password" class="input input-bordered" placeholder="••••••••" required>
+    </div>
+    <div class="form-control mt-6">
+      <button class="btn btn-primary">Login</button>
+    </div>
+  </div>
+</div>
+
+</div>
 
 ```html
 <div class="card w-full max-w-sm bg-base-100 shadow-xl">
   <div class="card-body">
     <h2 class="card-title">Login</h2>
     
-    <div class="sage-form-control">
-      <label class="sage-label">
-        <span class="sage-label-text">Email</span>
+    <div class="form-control">
+      <label class="label">
+        <span class="label-text">Email</span>
       </label>
-      <input type="email" class="sage-input sage-input-bordered" placeholder="your@email.com" required>
+      <input type="email" class="input input-bordered" placeholder="your@email.com" required>
     </div>
     
-    <div class="sage-form-control">
-      <label class="sage-label">
-        <span class="sage-label-text">Password</span>
+    <div class="form-control">
+      <label class="label">
+        <span class="label-text">Password</span>
       </label>
-      <input type="password" class="sage-input sage-input-bordered" placeholder="••••••••" required>
+      <input type="password" class="input input-bordered" placeholder="••••••••" required>
     </div>
     
-    <div class="sage-form-control mt-6">
-      <button class="sage-btn sage-btn-primary">Login</button>
+    <div class="form-control mt-6">
+      <button class="btn btn-primary">Login</button>
     </div>
   </div>
 </div>
 ```
 
 ### Search Bar
+<div class="demo-container">
+<div class="form-control">
+  <div class="input-group flex">
+    <input type="text" class="input input-bordered flex-1" placeholder="Search products...">
+    <button class="btn btn-primary">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+</div>
 
 ```html
-<div class="sage-form-control">
+<div class="form-control">
   <div class="input-group">
-    <input type="text" class="sage-input sage-input-bordered flex-1" placeholder="Search products...">
-    <button class="sage-btn sage-btn-primary">
+    <input type="text" class="input input-bordered flex-1" placeholder="Search products...">
+    <button class="btn btn-primary">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
       </svg>

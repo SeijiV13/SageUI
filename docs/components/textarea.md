@@ -210,6 +210,25 @@ Create textareas that automatically resize based on content.
 
 Add a character counter for length-limited textareas.
 
+<div class="demo-container">
+  <div class="form-control">
+    <label class="label">
+      <span class="label-text">Tweet</span>
+    </label>
+    <textarea 
+      class="textarea" 
+      placeholder="What's happening?"
+      maxlength="280"
+      oninput="updateCounter(this)">
+    </textarea>
+    <label class="label">
+      <span class="label-text-alt">
+        <span id="char-count">0</span>/280 characters
+      </span>
+    </label>
+  </div>
+</div>
+
 ```html
 <div class="form-control">
   <label class="label">

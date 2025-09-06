@@ -417,6 +417,18 @@ SageUI buttons are built with accessibility in mind:
 
 ### Call-to-Action Section
 
+<div class="demo-container">
+  <div class="text-center py-12">
+    <h2 class="text-3xl font-bold mb-4">Ready to get started?</h2>
+    <p class="text-gray-600 mb-8">Join thousands of developers building with SageUI</p>
+    <div class="space-x-4">
+      <button class="btn btn-primary btn-lg">Get Started Free</button>
+      <button class="btn btn-outline btn-lg">View Documentation</button>
+    </div>
+</div>
+
+</div>
+
 ```html
 <div class="text-center py-12">
   <h2 class="text-3xl font-bold mb-4">Ready to get started?</h2>
@@ -429,6 +441,14 @@ SageUI buttons are built with accessibility in mind:
 ```
 
 ### Form Actions
+
+<div class="demo-container">
+  <button type="button" class="btn btn-ghost">Cancel</button>
+  <button type="submit" class="btn btn-primary">
+    <div class="spinner spinner-sm mr-2 hidden" id="loading"></div>
+    Save Changes
+  </button>
+</div>
 
 ```html
 <div class="flex justify-end space-x-3 pt-4 border-t">

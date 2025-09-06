@@ -78,35 +78,35 @@ SageUI avatars support multiple sizes from extra small to extra large.
 <!-- Extra small -->
 <div class="avatar">
   <div class="w-6 rounded-full">
-    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&q=80" alt="Avatar">
+    <img src="avatar.jpg" alt="Avatar">
   </div>
 </div>
 
 <!-- Small -->
 <div class="avatar">
   <div class="w-8 rounded-full">
-    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&q=80" alt="Avatar">
+    <img src="avatar.jpg" alt="Avatar">
   </div>
 </div>
 
 <!-- Medium -->
 <div class="avatar">
   <div class="w-12 rounded-full">
-    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&q=80" alt="Avatar">
+    <img src="avatar.jpg" alt="Avatar">
   </div>
 </div>
 
 <!-- Large -->
 <div class="avatar">
   <div class="w-16 rounded-full">
-    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&q=80" alt="Avatar">
+    <img src="avatar.jpg" alt="Avatar">
   </div>
 </div>
 
 <!-- Extra large -->
 <div class="avatar">
   <div class="w-20 rounded-full">
-    <img src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&q=80" alt="Avatar">
+    <img src="avatar.jpg" alt="Avatar">
   </div>
 </div>
 ```
@@ -117,21 +117,21 @@ SageUI avatars support multiple sizes from extra small to extra large.
 <!-- Round (default) -->
 <div class="sage-avatar">
   <div class="w-12 rounded-full">
-    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&q=80" alt="Avatar">
+    <img src="avatar.jpg" alt="Avatar">
   </div>
 </div>
 
 <!-- Square -->
 <div class="sage-avatar">
   <div class="w-12 rounded">
-    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&q=80" alt="Avatar">
+    <img src="avatar.jpg" alt="Avatar">
   </div>
 </div>
 
 <!-- Rounded square -->
 <div class="sage-avatar">
   <div class="w-12 rounded-lg">
-    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&q=80" alt="Avatar">
+    <img src="avatar.jpg" alt="Avatar">
   </div>
 </div>
 ```
@@ -207,14 +207,14 @@ SageUI avatars support multiple sizes from extra small to extra large.
 <!-- Online -->
 <div class="sage-avatar online">
   <div class="w-16 rounded-full">
-    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&q=80" alt="Avatar">
+    <img src="avatar.jpg" alt="Avatar">
   </div>
 </div>
 
 <!-- Offline -->
 <div class="sage-avatar offline">
   <div class="w-16 rounded-full">
-    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&q=80" alt="Avatar">
+    <img src="avatar.jpg" alt="Avatar">
   </div>
 </div>
 
@@ -222,7 +222,7 @@ SageUI avatars support multiple sizes from extra small to extra large.
 <div class="relative">
   <div class="sage-avatar">
     <div class="w-16 rounded-full">
-      <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&q=80" alt="Avatar">
+      <img src="avatar.jpg" alt="Avatar">
     </div>
   </div>
   <div class="absolute bottom-0 right-0">
@@ -239,17 +239,17 @@ SageUI avatars support multiple sizes from extra small to extra large.
 <div class="sage-avatar-group -space-x-6">
   <div class="sage-avatar border-2 border-base-100">
     <div class="w-12 rounded-full">
-      <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&q=80" alt="Avatar 1">
+      <img src="avatar1.jpg" alt="Avatar 1">
     </div>
   </div>
   <div class="sage-avatar border-2 border-base-100">
     <div class="w-12 rounded-full">
-      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&q=80" alt="Avatar 2">
+      <img src="avatar2.jpg" alt="Avatar 2">
     </div>
   </div>
   <div class="sage-avatar border-2 border-base-100">
     <div class="w-12 rounded-full">
-      <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&q=80" alt="Avatar 3">
+      <img src="avatar3.jpg" alt="Avatar 3">
     </div>
   </div>
   <div class="sage-avatar placeholder border-2 border-base-100">
@@ -267,7 +267,7 @@ SageUI avatars support multiple sizes from extra small to extra large.
   <div class="flex items-center gap-3">
     <div class="sage-avatar">
       <div class="w-10 rounded-full">
-        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&q=80" alt="Avatar">
+        <img src="avatar1.jpg" alt="Avatar">
       </div>
     </div>
     <div>
@@ -279,7 +279,7 @@ SageUI avatars support multiple sizes from extra small to extra large.
   <div class="flex items-center gap-3">
     <div class="sage-avatar">
       <div class="w-10 rounded-full">
-        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&q=80" alt="Avatar">
+        <img src="avatar2.jpg" alt="Avatar">
       </div>
     </div>
     <div>
@@ -296,7 +296,7 @@ SageUI avatars support multiple sizes from extra small to extra large.
 <!-- Clickable avatar -->
 <button class="sage-avatar hover:scale-105 transition-transform">
   <div class="w-12 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&q=80" alt="Profile">
+    <img src="avatar.jpg" alt="Profile">
   </div>
 </button>
 
@@ -304,7 +304,7 @@ SageUI avatars support multiple sizes from extra small to extra large.
 <div class="dropdown dropdown-end">
   <label tabindex="0" class="sage-avatar cursor-pointer">
     <div class="w-10 rounded-full">
-      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&q=80" alt="Menu">
+      <img src="avatar.jpg" alt="Menu">
     </div>
   </label>
   <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
@@ -398,7 +398,7 @@ avatarGroup.render(document.getElementById('avatar-group-container'));
     <div class="relative">
       <div class="sage-avatar online">
         <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=96&q=80" alt="User Profile">
+          <img src="user-avatar.jpg" alt="User Profile">
         </div>
       </div>
       <button class="absolute bottom-0 right-0 sage-btn sage-btn-circle sage-btn-sm sage-btn-primary">
@@ -437,7 +437,7 @@ avatarGroup.render(document.getElementById('avatar-group-container'));
         <div class="flex items-center gap-3">
           <div class="sage-avatar online">
             <div class="w-12 rounded-full">
-              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&q=80" alt="Team Member">
+              <img src="member1.jpg" alt="Team Member">
             </div>
           </div>
           <div>
@@ -459,7 +459,7 @@ avatarGroup.render(document.getElementById('avatar-group-container'));
         <div class="flex items-center gap-3">
           <div class="sage-avatar">
             <div class="w-12 rounded-full">
-              <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&q=80" alt="Team Member">
+              <img src="member2.jpg" alt="Team Member">
             </div>
           </div>
           <div>
@@ -481,7 +481,7 @@ avatarGroup.render(document.getElementById('avatar-group-container'));
         <div class="flex items-center gap-3">
           <div class="sage-avatar offline">
             <div class="w-12 rounded-full">
-              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&q=80" alt="Team Member">
+              <img src="member3.jpg" alt="Team Member">
             </div>
           </div>
           <div>

@@ -6,6 +6,7 @@
   --vp-c-brand-soft: #f0fdf4;
 }
 
+
 /* Custom demo styles */
 .demo-container {
   margin: 2rem 0;
@@ -550,6 +551,7 @@ div[class*="language-"]:hover::before {
 .input, .textarea, .select, .sage-select {
   transition: all 0.3s ease;
   position: relative;
+  background: #fff;
 }
 
 .input:focus, .textarea:focus, .select:focus, .sage-select:focus {
@@ -1097,7 +1099,6 @@ div[class*="language-"]:hover pre {
   left: -2px;
   right: -2px;
   bottom: -2px;
-  background: linear-gradient(45deg, var(--vp-c-brand-1), transparent, var(--vp-c-brand-1));
   background-size: 400% 400%;
   animation: shimmer 3s ease-in-out infinite;
   opacity: 0;
@@ -1287,4 +1288,8 @@ div[class*="language-"]:hover pre {
   align-items: center;
   gap: 0.75rem;
   margin-bottom: 0.5rem;
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit !important;
 }

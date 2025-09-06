@@ -1,5 +1,4 @@
 import DefaultTheme from 'vitepress/theme'
-import './compiled.css'
 import './sageui.css'
 import './custom.css'
 

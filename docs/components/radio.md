@@ -43,6 +43,20 @@ Radio buttons allow users to select one option from a set of mutually exclusive 
   </div>
 </div>
 
+```html
+  <div class="demo-title">Radio Group with Labels</div>
+  <div class="sage-form-control">
+    <label class="cursor-pointer label">
+      <span class="label-text">Option 1</span> 
+      <input type="radio" name="radio-group-demo" class="sage-radio" value="1" checked>
+    </label>
+    <label class="cursor-pointer label">
+      <span class="label-text">Option 2</span> 
+      <input type="radio" name="radio-group-demo" class="sage-radio" value="2">
+    </label>
+  </div>
+```
+
 ## Variants
 
 ### Sizes

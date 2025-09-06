@@ -49,6 +49,22 @@
     @apply border-2 border-sage-500 text-sage-600 hover:bg-sage-500 hover:text-white focus:ring-sage-500;
   }
 
+  .btn-sucesss {
+    @apply bg-emerald-500 text-white hover:bg-emerald-600 focus:ring-emerald-500 active:bg-emerald-700;
+  }
+
+  .btn-warning {
+    @apply bg-amber-500 text-white hover:bg-amber-600 focus:ring-amber-500 active:bg-amber-700;
+  }
+
+  .btn-error {
+    @apply bg-red-500 text-white hover:bg-red-600 focus:ring-red-500 active:bg-red-700;
+  }
+
+  .btn-info {
+    @apply bg-sky-500 text-white hover:bg-sky-600 focus:ring-sky-500 active:bg-sky-700;
+  }
+
   .btn-sm {
     @apply px-3 py-1.5 text-sm rounded-md;
   }

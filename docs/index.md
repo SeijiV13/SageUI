@@ -210,6 +210,6 @@ We're constantly improving SageUI based on community feedback and real-world usa
 Ready to build something amazing? Check out our [installation guide](/guide/installation) or explore our [component library](/components/button).
 
 <div class="flex gap-4 mt-8">
-  <a href="/guide/installation" class="btn btn-primary">Get Started</a>
+  <a href="/guide/installation" class="btn btn-primary text-white">Get Started</a>
   <a href="/components/button" class="btn btn-outline">View Components</a>
 </div>

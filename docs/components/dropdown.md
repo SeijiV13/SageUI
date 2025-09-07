@@ -7,7 +7,7 @@ Dropdowns display a list of options when triggered, perfect for menus, select al
 ```html
 <!-- Basic dropdown -->
 <div class="dropdown">
-  <label tabindex="0" class="sage-btn">Dropdown</label>
+  <label tabindex="0" class="btn">Dropdown</label>
   <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
     <li><a>Item 1</a></li>
     <li><a>Item 2</a></li>
@@ -22,7 +22,7 @@ Dropdowns display a list of options when triggered, perfect for menus, select al
 <div class="flex gap-4 flex-wrap">
   <!-- Default (bottom-left) -->
   <div class="dropdown">
-    <label tabindex="0" class="sage-btn">Bottom</label>
+    <label tabindex="0" class="btn">Bottom</label>
     <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
       <li><a>Item 1</a></li>
       <li><a>Item 2</a></li>
@@ -31,7 +31,7 @@ Dropdowns display a list of options when triggered, perfect for menus, select al
   
   <!-- Bottom-right -->
   <div class="dropdown dropdown-end">
-    <label tabindex="0" class="sage-btn">Bottom End</label>
+    <label tabindex="0" class="btn">Bottom End</label>
     <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
       <li><a>Item 1</a></li>
       <li><a>Item 2</a></li>
@@ -40,7 +40,7 @@ Dropdowns display a list of options when triggered, perfect for menus, select al
   
   <!-- Top -->
   <div class="dropdown dropdown-top">
-    <label tabindex="0" class="sage-btn">Top</label>
+    <label tabindex="0" class="btn">Top</label>
     <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
       <li><a>Item 1</a></li>
       <li><a>Item 2</a></li>
@@ -49,7 +49,7 @@ Dropdowns display a list of options when triggered, perfect for menus, select al
   
   <!-- Top-right -->
   <div class="dropdown dropdown-top dropdown-end">
-    <label tabindex="0" class="sage-btn">Top End</label>
+    <label tabindex="0" class="btn">Top End</label>
     <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
       <li><a>Item 1</a></li>
       <li><a>Item 2</a></li>
@@ -58,7 +58,7 @@ Dropdowns display a list of options when triggered, perfect for menus, select al
   
   <!-- Left -->
   <div class="dropdown dropdown-left">
-    <label tabindex="0" class="sage-btn">Left</label>
+    <label tabindex="0" class="btn">Left</label>
     <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
       <li><a>Item 1</a></li>
       <li><a>Item 2</a></li>
@@ -67,7 +67,7 @@ Dropdowns display a list of options when triggered, perfect for menus, select al
   
   <!-- Right -->
   <div class="dropdown dropdown-right">
-    <label tabindex="0" class="sage-btn">Right</label>
+    <label tabindex="0" class="btn">Right</label>
     <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
       <li><a>Item 1</a></li>
       <li><a>Item 2</a></li>
@@ -81,7 +81,7 @@ Dropdowns display a list of options when triggered, perfect for menus, select al
 ```html
 <!-- Always open -->
 <div class="dropdown dropdown-open">
-  <label tabindex="0" class="sage-btn">Always Open</label>
+  <label tabindex="0" class="btn">Always Open</label>
   <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
     <li><a>Item 1</a></li>
     <li><a>Item 2</a></li>
@@ -91,7 +91,7 @@ Dropdowns display a list of options when triggered, perfect for menus, select al
 
 <!-- Hover to open -->
 <div class="dropdown dropdown-hover">
-  <label tabindex="0" class="sage-btn">Hover</label>
+  <label tabindex="0" class="btn">Hover</label>
   <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
     <li><a>Item 1</a></li>
     <li><a>Item 2</a></li>
@@ -106,7 +106,7 @@ Dropdowns display a list of options when triggered, perfect for menus, select al
 
 ```html
 <div class="dropdown">
-  <label tabindex="0" class="sage-btn">Menu</label>
+  <label tabindex="0" class="btn">Menu</label>
   <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
     <li><a>Profile</a></li>
     <li><a>Settings</a></li>
@@ -119,7 +119,7 @@ Dropdowns display a list of options when triggered, perfect for menus, select al
 
 ```html
 <div class="dropdown">
-  <label tabindex="0" class="sage-btn sage-btn-circle sage-btn-ghost">
+  <label tabindex="0" class="btn btn-circle btn-ghost">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
     </svg>
@@ -158,13 +158,13 @@ Dropdowns display a list of options when triggered, perfect for menus, select al
 
 ```html
 <div class="dropdown dropdown-end">
-  <label tabindex="0" class="sage-btn sage-btn-ghost">
+  <label tabindex="0" class="btn btn-ghost">
     <div class="indicator">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-5 5v-5z" />
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z" />
       </svg>
-      <span class="sage-badge sage-badge-xs sage-badge-primary indicator-item">3</span>
+      <span class="badge badge-xs badge-primary indicator-item">3</span>
     </div>
   </label>
   <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-80">
@@ -177,7 +177,7 @@ Dropdowns display a list of options when triggered, perfect for menus, select al
           <div class="font-medium">New message</div>
           <div class="text-sm opacity-70">From John Doe</div>
         </div>
-        <div class="sage-badge sage-badge-primary sage-badge-sm">New</div>
+        <div class="badge badge-primary badge-sm">New</div>
       </a>
     </li>
     <li>
@@ -186,7 +186,7 @@ Dropdowns display a list of options when triggered, perfect for menus, select al
           <div class="font-medium">System update</div>
           <div class="text-sm opacity-70">2 hours ago</div>
         </div>
-        <div class="sage-badge sage-badge-success sage-badge-sm">Info</div>
+        <div class="badge badge-success badge-sm">Info</div>
       </a>
     </li>
     <li>
@@ -205,9 +205,9 @@ Dropdowns display a list of options when triggered, perfect for menus, select al
 
 ```html
 <div class="dropdown">
-  <label tabindex="0" class="sage-btn">Select Framework</label>
+  <label tabindex="0" class="btn">Select Framework</label>
   <div tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-64">
-    <input type="text" class="sage-input sage-input-bordered sage-input-sm mb-2" placeholder="Search frameworks..." id="framework-search">
+    <input type="text" class="input input-bordered input-sm mb-2" placeholder="Search frameworks..." id="framework-search">
     <ul class="max-h-48 overflow-y-auto">
       <li><a data-value="react">React</a></li>
       <li><a data-value="vue">Vue</a></li>
@@ -236,11 +236,11 @@ document.getElementById('framework-search').addEventListener('input', function()
 
 ```html
 <div class="dropdown">
-  <label tabindex="0" class="sage-btn">User Menu</label>
+  <label tabindex="0" class="btn">User Menu</label>
   <div tabindex="0" class="dropdown-content card card-compact w-64 p-2 shadow bg-primary text-primary-content">
     <div class="card-body">
       <div class="flex items-center gap-3 mb-4">
-        <div class="sage-avatar">
+        <div class="avatar">
           <div class="w-12 rounded-full">
             <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" alt="Avatar">
           </div>
@@ -252,7 +252,7 @@ document.getElementById('framework-search').addEventListener('input', function()
       </div>
       
       <div class="card-actions">
-        <button class="sage-btn sage-btn-primary sage-btn-block">View Profile</button>
+        <button class="btn btn-primary btn-block">View Profile</button>
       </div>
       
       <div class="menu">
@@ -356,7 +356,7 @@ const searchableDropdown = new Dropdown({
 <div class="navbar bg-base-100 shadow">
   <div class="navbar-start">
     <div class="dropdown">
-      <label tabindex="0" class="sage-btn sage-btn-ghost lg:hidden">
+      <label tabindex="0" class="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
         </svg>
@@ -381,12 +381,12 @@ const searchableDropdown = new Dropdown({
   </div>
   
   <div class="navbar-center">
-    <a class="sage-btn sage-btn-ghost normal-case text-xl">SageUI</a>
+    <a class="btn btn-ghost normal-case text-xl">SageUI</a>
   </div>
   
   <div class="navbar-end">
     <div class="dropdown dropdown-end">
-      <label tabindex="0" class="sage-btn sage-btn-ghost sage-btn-circle avatar">
+      <label tabindex="0" class="btn btn-ghost btn-circle avatar">
         <div class="w-10 rounded-full">
           <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
         </div>
@@ -395,7 +395,7 @@ const searchableDropdown = new Dropdown({
         <li>
           <a class="justify-between">
             Profile
-            <span class="sage-badge">New</span>
+            <span class="badge">New</span>
           </a>
         </li>
         <li><a>Settings</a></li>
@@ -413,7 +413,7 @@ const searchableDropdown = new Dropdown({
   <span class="text-lg font-semibold">Project Alpha</span>
   
   <div class="dropdown dropdown-end">
-    <label tabindex="0" class="sage-btn sage-btn-ghost sage-btn-sm">
+    <label tabindex="0" class="btn btn-ghost btn-sm">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
       </svg>

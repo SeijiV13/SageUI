@@ -375,9 +375,6 @@ Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/
 Add the correct vertical alignment in Chrome and Firefox.
 */
 
-progress {
-  vertical-align: baseline;
-}
 
 /*
 Correct the cursor style of increment and decrement buttons in Safari.
@@ -555,13 +552,13 @@ video {
 }
 
 :root {
-  --sage-primary: 34 197 94;
-  --sage-secondary: 132 204 22;
-  --sage-accent: 16 185 129;
-  --sage-success: 5 150 105;
-  --sage-warning: 217 119 6;
-  --sage-error: 220 38 38;
-  --sage-info: 2 132 199;
+  --primary: 34 197 94;
+  --secondary: 132 204 22;
+  --accent: 16 185 129;
+  --success: 5 150 105;
+  --warning: 217 119 6;
+  --error: 220 38 38;
+  --info: 2 132 199;
 }
 
 .\!container {
@@ -1051,6 +1048,74 @@ video {
   color: rgb(107 114 128 / var(--tw-text-opacity, 1));
 }
 
+.input-primary {
+  --tw-border-opacity: 1;
+  border-color: rgb(34 197 94 / var(--tw-border-opacity, 1));
+}
+
+.input-primary:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(22 163 74 / var(--tw-border-opacity, 1));
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(34 197 94 / var(--tw-ring-opacity, 1));
+}
+
+.input-secondary {
+  --tw-border-opacity: 1;
+  border-color: rgb(132 204 22 / var(--tw-border-opacity, 1));
+}
+
+.input-secondary:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(101 163 13 / var(--tw-border-opacity, 1));
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(132 204 22 / var(--tw-ring-opacity, 1));
+}
+
+
+.input-success {
+  --tw-border-opacity: 1;
+  border-color: rgb(5 150 105 / var(--tw-border-opacity, 1));
+}
+
+.input-success:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(4 120 87 / var(--tw-border-opacity, 1));
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(5 150 105 / var(--tw-ring-opacity, 1));
+}
+
+.input-error {
+  --tw-border-opacity: 1;
+  border-color: rgb(220 38 38 / var(--tw-border-opacity, 1));
+}
+
+.input-error:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(185 28 28 / var(--tw-border-opacity, 1));
+}
+
+
+.input-warning {
+  --tw-border-opacity: 1;
+  border-color: rgb(217 119 6 / var(--tw-border-opacity, 1));
+}
+
+.input-warning:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(180 83 9 / var(--tw-border-opacity, 1));
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(217 119 6 / var(--tw-ring-opacity, 1));
+}
+
+
+.input-error:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(185 28 28 / var(--tw-border-opacity, 1));
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(220 38 38 / var(--tw-ring-opacity, 1));
+}
+
 .input-sm {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1147,6 +1212,18 @@ video {
   resize: vertical;
 }
 
+.textarea-error {
+  --tw-border-opacity: 1;
+  border-color: rgb(220 38 38 / var(--tw-border-opacity, 1));
+}
+
+.textarea-error:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(185 28 28 / var(--tw-border-opacity, 1));
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(220 38 38 / var(--tw-ring-opacity, 1));
+}
+
 .\!select {
   width: 100%;
   border-radius: 0.375rem;
@@ -1237,6 +1314,51 @@ video {
   color: rgb(22 163 74 / var(--tw-text-opacity, 1));
 }
 
+.checkbox-sm {
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+.checkbox-lg {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.checkbox-md {
+  height: 1rem;
+  width: 1rem;
+}
+
+.checkbox-xs {
+  height: 0.5rem;
+  width: 0.5rem;
+}
+
+.checkbox-primary:checked {
+  --tw-border-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-border-opacity, 1));
+  border-color: rgb(34 197 94 / var(--tw-border-opacity, 1));
+}
+
+.checkbox-secondary:checked {
+  --tw-border-opacity: 1;
+  background-color: rgb(132 204 22 / var(--tw-border-opacity, 1));
+  border-color: rgb(132 204 22 / var(--tw-border-opacity, 1));
+}
+
+.checkbox-success:checked {
+  --tw-border-opacity: 1;
+  background-color: rgb(5 150 105 / var(--tw-border-opacity, 1));
+  border-color: rgb(5 150 105 / var(--tw-border-opacity, 1));
+}
+
+.checkbox-error:checked {
+  --tw-border-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-border-opacity, 1));
+  border-color: rgb(220 38 38 / var(--tw-border-opacity, 1));
+}
+
+
 .checkbox:focus {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
@@ -1305,6 +1427,19 @@ video {
   color: rgb(133 77 14 / var(--tw-text-opacity, 1));
 }
 
+.badge-error {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 202 202 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(153 27 27 / var(--tw-text-opacity, 1));
+}
+
+.badge-info {
+  --tw-bg-opacity: 1;
+  background-color: rgb(191 219 254 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(30 64 175 / var(--tw-text-opacity, 1));
+} 
 /* Loading */
 
 .loading {
@@ -1338,6 +1473,7 @@ video {
 /* Progress */
 
 .progress {
+  display: flex;
   height: 0.625rem;
   width: 100%;
   overflow: hidden;
@@ -1346,7 +1482,102 @@ video {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
 }
 
+.progress {
+  vertical-align: baseline;
+}
+
+
+.progress-bar {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity, 1));
+  height: 100%;
+  border-radius: 0.25rem;
+}
+
+.progress-sm {
+  height: 0.5rem !important;
+}
+
+.progress-md {
+  height: 0.75rem !important;
+}
+
+.progress-lg {
+  height: 1rem !important;
+}
+
+.progress-bar-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(132 204 22 / var(--tw-bg-opacity, 1));
+}
+
+.progress-bar-success {
+  --tw-bg-opacity: 1;
+  background-color: rgb(5 150 105 / var(--tw-bg-opacity, 1));
+}
+
+.progress-bar-error {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity, 1));
+}
+
+.progress-bar-warning {
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 119 6 / var(--tw-bg-opacity, 1));
+}
+
+.progress-bar-info {
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 132 199 / var(--tw-bg-opacity, 1));
+}
+
+.progress-bar-striped {
+  background-image: linear-gradient(45deg, rgb(255 255 255 / 0.15) 25%, transparent 25%, transparent 50%, rgb(255 255 255 / 0.15) 50%, rgb(255 255 255 / 0.15) 75%, transparent 75%, transparent);
+  background-size: 1rem 1rem;
+}
+
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 1rem 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+} 
+
+.progress-bar-animated {
+  animation: progress-bar-stripes 1s linear infinite;
+}
+
 /* Avatar */
+
+.online {
+  /* should add an online green indicator */
+  right: 0px;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 9999px;
+  border-width: 6px;
+  --tw-border-opacity: 1;
+  border-color:  rgb(34 197 94 / var(--tw-bg-opacity, 1));
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity, 1));
+  position: absolute !important;
+}
+
+.offline {
+  /* should add an offline gray indicator */
+  right: 0px;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 9999px;
+  border-width: 6px;
+  --tw-border-opacity: 1;
+  border-color: gray;
+  --tw-bg-opacity: 1;
+  background-color: gray;
+  position: absolute !important;
+}
 
 .avatar {
   position: relative;
@@ -2199,17 +2430,17 @@ video {
   border-color: rgb(252 165 165 / var(--tw-border-opacity, 1));
 }
 
-.border-sage-200 {
+.border-200 {
   --tw-border-opacity: 1;
   border-color: rgb(187 247 208 / var(--tw-border-opacity, 1));
 }
 
-.border-sage-300 {
+.border-300 {
   --tw-border-opacity: 1;
   border-color: rgb(134 239 172 / var(--tw-border-opacity, 1));
 }
 
-.border-sage-500 {
+.border-500 {
   --tw-border-opacity: 1;
   border-color: rgb(34 197 94 / var(--tw-border-opacity, 1));
 }
@@ -2322,17 +2553,17 @@ video {
   background-color: rgb(254 242 242 / var(--tw-bg-opacity, 1));
 }
 
-.bg-sage-100 {
+.bg-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(220 252 231 / var(--tw-bg-opacity, 1));
 }
 
-.bg-sage-50 {
+.bg-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(240 253 244 / var(--tw-bg-opacity, 1));
 }
 
-.bg-sage-500 {
+.bg-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(34 197 94 / var(--tw-bg-opacity, 1));
 }
@@ -2383,7 +2614,7 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.from-sage-500 {
+.from-500 {
   --tw-gradient-from: #22c55e var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(34 197 94 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
@@ -2507,6 +2738,11 @@ video {
 
 .text-right {
   text-align: right;
+}
+
+.text-error {
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity, 1));
 }
 
 .font-mono {
@@ -2679,22 +2915,22 @@ video {
   color: rgb(127 29 29 / var(--tw-text-opacity, 1));
 }
 
-.text-sage-500 {
+.text-500 {
   --tw-text-opacity: 1;
   color: rgb(34 197 94 / var(--tw-text-opacity, 1));
 }
 
-.text-sage-600 {
+.text-600 {
   --tw-text-opacity: 1;
   color: rgb(22 163 74 / var(--tw-text-opacity, 1));
 }
 
-.text-sage-700 {
+.text-700 {
   --tw-text-opacity: 1;
   color: rgb(21 128 61 / var(--tw-text-opacity, 1));
 }
 
-.text-sage-800 {
+.text-800 {
   --tw-text-opacity: 1;
   color: rgb(22 101 52 / var(--tw-text-opacity, 1));
 }
@@ -2824,7 +3060,7 @@ video {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
-.ring-sage-400 {
+.ring-400 {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(74 222 128 / var(--tw-ring-opacity, 1));
 }
@@ -2935,17 +3171,17 @@ video {
   background-color: rgb(101 163 13 / var(--tw-bg-opacity, 1));
 }
 
-.hover\:bg-sage-50:hover {
+.hover\:bg-50:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(240 253 244 / var(--tw-bg-opacity, 1));
 }
 
-.hover\:bg-sage-500:hover {
+.hover\:bg-500:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(34 197 94 / var(--tw-bg-opacity, 1));
 }
 
-.hover\:bg-sage-600:hover {
+.hover\:bg-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(22 163 74 / var(--tw-bg-opacity, 1));
 }
@@ -2956,7 +3192,7 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.hover\:from-sage-600:hover {
+.hover\:from-600:hover {
   --tw-gradient-from: #16a34a var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(22 163 74 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
@@ -2992,7 +3228,7 @@ video {
   border-color: rgb(239 68 68 / var(--tw-border-opacity, 1));
 }
 
-.focus\:border-sage-500:focus {
+.focus\:border-500:focus {
   --tw-border-opacity: 1;
   border-color: rgb(34 197 94 / var(--tw-border-opacity, 1));
 }
@@ -3034,7 +3270,7 @@ video {
   --tw-ring-color: rgb(239 68 68 / var(--tw-ring-opacity, 1));
 }
 
-.focus\:ring-sage-500:focus {
+.focus\:ring-500:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(34 197 94 / var(--tw-ring-opacity, 1));
 }
@@ -3053,7 +3289,7 @@ video {
   background-color: rgb(77 124 15 / var(--tw-bg-opacity, 1));
 }
 
-.active\:bg-sage-700:active {
+.active\:bg-700:active {
   --tw-bg-opacity: 1;
   background-color: rgb(21 128 61 / var(--tw-bg-opacity, 1));
 }
@@ -3076,6 +3312,59 @@ video {
 
 .group:hover .group-hover\:opacity-100 {
   opacity: 1;
+}
+
+/* spinner */
+/* Create a spinner loading style */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.spinner {
+  width: 100px;
+  height: 100px;
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #22c55e;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+
+.spinner-sm {
+  width: 24px;
+  height: 24px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #22c55e;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.spinner-md {
+  width: 48px;
+  height: 48px;
+  border: 6px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #22c55e;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.spinner-lg {
+  width: 64px;
+  height: 64px;
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #22c55e;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.spinner-xl {
+  width: 96px;
+  height: 96px;
+  border: 12px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #22c55e;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
 }
 
 @media (min-width: 640px) {

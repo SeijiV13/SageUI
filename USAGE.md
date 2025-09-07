@@ -100,7 +100,7 @@ module.exports = {
 <div class="card card-bordered">
   <div class="card-body">
     <h3 class="card-title">Bordered Card</h3>
-    <p>This card has a sage-colored border.</p>
+    <p>This card has a colored border.</p>
   </div>
 </div>
 ```

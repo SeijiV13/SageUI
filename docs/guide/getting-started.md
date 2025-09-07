@@ -266,7 +266,7 @@ Our nature-inspired color palette centers around greens and earth tones:
   <div class="demo-title">Primary Colors</div>
   <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
     <div class="text-center">
-      <div class="w-16 h-16 bg-sage-500 rounded-lg mx-auto mb-2"></div>
+      <div class="w-16 h-16 bg-500 rounded-lg mx-auto mb-2"></div>
       <div class="text-sm font-medium">Sage</div>
       <div class="text-xs text-gray-500">Primary</div>
     </div>
@@ -312,15 +312,15 @@ Consistent spacing using Tailwind's spacing scale (0.25rem increments):
   <div class="demo-title">Spacing Examples</div>
   <div class="space-y-4">
     <div class="flex items-center">
-      <div class="w-4 h-4 bg-sage-500 mr-4"></div>
+      <div class="w-4 h-4 bg-500 mr-4"></div>
       <span class="text-sm">4 (1rem / 16px)</span>
     </div>
     <div class="flex items-center">
-      <div class="w-6 h-6 bg-sage-500 mr-6"></div>
+      <div class="w-6 h-6 bg-500 mr-6"></div>
       <span class="text-sm">6 (1.5rem / 24px)</span>
     </div>
     <div class="flex items-center">
-      <div class="w-8 h-8 bg-sage-500 mr-8"></div>
+      <div class="w-8 h-8 bg-500 mr-8"></div>
       <span class="text-sm">8 (2rem / 32px)</span>
     </div>
   </div>
@@ -357,9 +357,9 @@ If you run into any issues or have questions:
 - 💬 **Discord Community**: Get help from other developers
 - 📧 **Email Support**: Direct support for complex issues
 
-<div class="mt-8 p-6 bg-sage-50 border-l-4 border-sage-500 rounded-r-lg">
-  <h4 class="font-semibold text-sage-800 mb-2">Pro Tip</h4>
-  <p class="text-sage-700">
+<div class="mt-8 p-6 bg-50 border-l-4 border-500 rounded-r-lg">
+  <h4 class="font-semibold text-800 mb-2">Pro Tip</h4>
+  <p class="text-700">
     Start small! Pick a few components to get familiar with the system, 
     then gradually expand your usage as you become more comfortable with SageUI's patterns.
   </p>

@@ -53,25 +53,25 @@ export class Select {
 
   private applyStyles(): void {
     // Base class
-    this.element.className = 'sage-select';
+    this.element.className = 'select';
 
     // Add variant class
     if (this.props.variant && this.props.variant !== 'primary') {
-      this.element.classList.add(`sage-select-${this.props.variant}`);
+      this.element.classList.add(`select-${this.props.variant}`);
     }
 
     // Add size class
     if (this.props.size && this.props.size !== 'md') {
-      this.element.classList.add(`sage-select-${this.props.size}`);
+      this.element.classList.add(`select-${this.props.size}`);
     }
 
     // Add style variants
     if (this.props.bordered) {
-      this.element.classList.add('sage-select-bordered');
+      this.element.classList.add('select-bordered');
     }
 
     if (this.props.ghost) {
-      this.element.classList.add('sage-select-ghost');
+      this.element.classList.add('select-ghost');
     }
 
     // Add custom classes
@@ -160,32 +160,32 @@ export class Select {
   setVariant(variant: SelectProps['variant']): void {
     // Remove old variant classes
     this.element.classList.remove(
-      'sage-select-primary',
-      'sage-select-secondary', 
-      'sage-select-success',
-      'sage-select-warning',
-      'sage-select-error'
+      'select-primary',
+      'select-secondary', 
+      'select-success',
+      'select-warning',
+      'select-error'
     );
 
     this.props.variant = variant;
     
     if (variant && variant !== 'primary') {
-      this.element.classList.add(`sage-select-${variant}`);
+      this.element.classList.add(`select-${variant}`);
     }
   }
 
   setSize(size: SelectProps['size']): void {
     // Remove old size classes
     this.element.classList.remove(
-      'sage-select-xs',
-      'sage-select-sm',
-      'sage-select-lg'
+      'select-xs',
+      'select-sm',
+      'select-lg'
     );
 
     this.props.size = size;
     
     if (size && size !== 'md') {
-      this.element.classList.add(`sage-select-${size}`);
+      this.element.classList.add(`select-${size}`);
     }
   }
 
@@ -242,9 +242,9 @@ export class Select {
     this.props.bordered = bordered;
     
     if (bordered) {
-      this.element.classList.add('sage-select-bordered');
+      this.element.classList.add('select-bordered');
     } else {
-      this.element.classList.remove('sage-select-bordered');
+      this.element.classList.remove('select-bordered');
     }
   }
 
@@ -252,9 +252,9 @@ export class Select {
     this.props.ghost = ghost;
     
     if (ghost) {
-      this.element.classList.add('sage-select-ghost');
+      this.element.classList.add('select-ghost');
     } else {
-      this.element.classList.remove('sage-select-ghost');
+      this.element.classList.remove('select-ghost');
     }
   }
 
@@ -306,7 +306,7 @@ export class Select {
   }
 
   static render(): string {
-    return '<select class="sage-select"></select>';
+    return '<select class="select"></select>';
   }
 }
 

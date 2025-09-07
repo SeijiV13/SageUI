@@ -38,16 +38,16 @@ export class Radio {
     input.type = 'radio';
     input.name = this.props.name;
     input.value = option.value.toString();
-    input.className = 'sage-radio';
+    input.className = 'radio';
 
     // Add variant class
     if (this.props.variant && this.props.variant !== 'primary') {
-      input.classList.add(`sage-radio-${this.props.variant}`);
+      input.classList.add(`radio-${this.props.variant}`);
     }
 
     // Add size class
     if (this.props.size && this.props.size !== 'md') {
-      input.classList.add(`sage-radio-${this.props.size}`);
+      input.classList.add(`radio-${this.props.size}`);
     }
 
     // Set checked state
@@ -87,7 +87,7 @@ export class Radio {
     this.container.innerHTML = '';
 
     const formControl = document.createElement('div');
-    formControl.className = 'sage-form-control';
+    formControl.className = 'form-control';
 
     if (this.props.className) {
       formControl.classList.add(this.props.className);

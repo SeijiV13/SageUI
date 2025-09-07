@@ -197,6 +197,15 @@ Add helper text to provide additional context.
 
 Create textareas that automatically resize based on content.
 
+<div class="demo-container">
+ <textarea 
+  class="textarea resize-none overflow-hidden"
+  placeholder="This textarea will grow as you type..."
+  oninput="this.style.height = 'auto'; this.style.height = this.scrollHeight + 'px'"
+  rows="3">
+</textarea>
+</div>
+
 ```html
 <textarea 
   class="textarea resize-none overflow-hidden"
@@ -342,6 +351,42 @@ textarea.clearError();
 
 ### Contact Form
 
+<div class="demo-container">
+
+<form class="space-y-4">
+  <div class="form-control">
+    <label class="label">
+      <span class="label-text">Name *</span>
+    </label>
+    <input type="text" class="input" placeholder="Your name" required>
+  </div>
+  
+  <div class="form-control">
+    <label class="label">
+      <span class="label-text">Email *</span>
+    </label>
+    <input type="email" class="input" placeholder="your@email.com" required>
+  </div>
+  
+  <div class="form-control">
+    <label class="label">
+      <span class="label-text">Message *</span>
+    </label>
+    <textarea 
+      class="textarea" 
+      placeholder="How can we help you?"
+      rows="5"
+      required>
+    </textarea>
+    <label class="label">
+      <span class="label-text-alt">Minimum 20 characters</span>
+    </label>
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Send Message</button>
+</form>
+</div>
+
 ```html
 <form class="space-y-4">
   <div class="form-control">
@@ -378,6 +423,19 @@ textarea.clearError();
 ```
 
 ### Code Editor Style
+<div class="demo-container">
+ <div class="form-control">
+  <label class="label">
+    <span class="label-text font-mono">Code</span>
+  </label>
+  <textarea 
+    class="textarea font-mono text-sm bg-gray-900 text-green-400 border-gray-700"
+    placeholder="// Enter your code here..."
+    rows="10"
+    spellcheck="false">
+  </textarea>
+</div>
+</div>
 
 ```html
 <div class="form-control">

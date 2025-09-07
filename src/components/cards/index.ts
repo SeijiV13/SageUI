@@ -10,8 +10,8 @@ export const cardClasses = {
   base: 'card bg-white overflow-hidden',
   variants: {
     default: 'border border-gray-200',
-    bordered: 'border-2 border-sage-200',
-    shadow: 'shadow-sage-lg border border-gray-100',
+    bordered: 'border-2 border-200',
+    shadow: 'shadow-lg border border-gray-100',
     compact: 'border border-gray-200'
   },
   padding: {

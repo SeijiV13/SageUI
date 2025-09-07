@@ -7,7 +7,7 @@ export interface BadgeProps {
 export const badgeClasses = {
   base: 'badge inline-flex items-center font-medium',
   variants: {
-    primary: 'bg-sage-100 text-sage-800',
+    primary: 'bg-100 text-800',
     secondary: 'bg-forest-100 text-forest-800',
     success: 'bg-emerald-100 text-emerald-800',
     warning: 'bg-amber-100 text-amber-800',
@@ -50,7 +50,7 @@ export interface AvatarProps {
 }
 
 export const avatarClasses = {
-  base: 'avatar inline-flex items-center justify-center rounded-full bg-sage-100 text-sage-600 font-medium',
+  base: 'avatar inline-flex items-center justify-center rounded-full bg-100 text-600 font-medium',
   sizes: {
     sm: 'h-8 w-8 text-sm',
     md: 'h-10 w-10 text-base',
@@ -95,7 +95,7 @@ export const spinnerClasses = {
     lg: 'h-8 w-8'
   },
   colors: {
-    primary: 'text-sage-500',
+    primary: 'text-500',
     secondary: 'text-forest-500',
     white: 'text-white'
   }

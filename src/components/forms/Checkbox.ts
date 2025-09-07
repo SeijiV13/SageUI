@@ -29,16 +29,16 @@ export class Checkbox {
 
   private applyStyles(): void {
     // Base class
-    this.element.className = 'sage-checkbox';
+    this.element.className = 'checkbox';
 
     // Add variant class
     if (this.props.variant && this.props.variant !== 'primary') {
-      this.element.classList.add(`sage-checkbox-${this.props.variant}`);
+      this.element.classList.add(`checkbox-${this.props.variant}`);
     }
 
     // Add size class
     if (this.props.size && this.props.size !== 'md') {
-      this.element.classList.add(`sage-checkbox-${this.props.size}`);
+      this.element.classList.add(`checkbox-${this.props.size}`);
     }
 
     // Add custom classes
@@ -73,32 +73,32 @@ export class Checkbox {
   setVariant(variant: CheckboxProps['variant']): void {
     // Remove old variant classes
     this.element.classList.remove(
-      'sage-checkbox-primary',
-      'sage-checkbox-secondary', 
-      'sage-checkbox-success',
-      'sage-checkbox-warning',
-      'sage-checkbox-error'
+      'checkbox-primary',
+      'checkbox-secondary', 
+      'checkbox-success',
+      'checkbox-warning',
+      'checkbox-error'
     );
 
     this.props.variant = variant;
     
     if (variant && variant !== 'primary') {
-      this.element.classList.add(`sage-checkbox-${variant}`);
+      this.element.classList.add(`checkbox-${variant}`);
     }
   }
 
   setSize(size: CheckboxProps['size']): void {
     // Remove old size classes
     this.element.classList.remove(
-      'sage-checkbox-xs',
-      'sage-checkbox-sm',
-      'sage-checkbox-lg'
+      'checkbox-xs',
+      'checkbox-sm',
+      'checkbox-lg'
     );
 
     this.props.size = size;
     
     if (size && size !== 'md') {
-      this.element.classList.add(`sage-checkbox-${size}`);
+      this.element.classList.add(`checkbox-${size}`);
     }
   }
 
@@ -156,7 +156,7 @@ export class Checkbox {
   }
 
   static render(): string {
-    return '<input type="checkbox" class="sage-checkbox">';
+    return '<input type="checkbox" class="checkbox">';
   }
 }
 

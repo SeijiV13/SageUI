@@ -6,7 +6,7 @@ Modals are dialog boxes that display content on top of the main page, typically 
 
 ```html
 <!-- Modal trigger -->
-<label for="my-modal" class="sage-btn">Open Modal</label>
+<label for="my-modal" class="btn">Open Modal</label>
 
 <!-- Modal -->
 <input type="checkbox" id="my-modal" class="modal-toggle" />
@@ -15,7 +15,7 @@ Modals are dialog boxes that display content on top of the main page, typically 
     <h3 class="font-bold text-lg">Congratulations!</h3>
     <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
     <div class="modal-action">
-      <label for="my-modal" class="sage-btn">Close</label>
+      <label for="my-modal" class="btn">Close</label>
     </div>
   </div>
 </div>
@@ -30,7 +30,7 @@ Modals are dialog boxes that display content on top of the main page, typically 
     <h3 class="font-bold text-lg">Small Modal</h3>
     <p class="py-4">This is a small modal.</p>
     <div class="modal-action">
-      <button class="sage-btn">Close</button>
+      <button class="btn">Close</button>
     </div>
   </div>
 </div>
@@ -41,7 +41,7 @@ Modals are dialog boxes that display content on top of the main page, typically 
     <h3 class="font-bold text-lg">Medium Modal</h3>
     <p class="py-4">This is the default modal size.</p>
     <div class="modal-action">
-      <button class="sage-btn">Close</button>
+      <button class="btn">Close</button>
     </div>
   </div>
 </div>
@@ -52,7 +52,7 @@ Modals are dialog boxes that display content on top of the main page, typically 
     <h3 class="font-bold text-lg">Large Modal</h3>
     <p class="py-4">This is a large modal with more space for content.</p>
     <div class="modal-action">
-      <button class="sage-btn">Close</button>
+      <button class="btn">Close</button>
     </div>
   </div>
 </div>
@@ -73,8 +73,8 @@ Modals are dialog boxes that display content on top of the main page, typically 
     </div>
     <p class="py-4">Are you sure you want to delete this item? This action cannot be undone.</p>
     <div class="modal-action">
-      <button class="sage-btn sage-btn-ghost">Cancel</button>
-      <button class="sage-btn sage-btn-error">Delete</button>
+      <button class="btn btn-ghost">Cancel</button>
+      <button class="btn btn-error">Delete</button>
     </div>
   </div>
 </div>
@@ -87,25 +87,25 @@ Modals are dialog boxes that display content on top of the main page, typically 
   <div class="modal-box">
     <h3 class="font-bold text-lg mb-4">Add New User</h3>
     
-    <div class="sage-form-control">
-      <label class="sage-label">
-        <span class="sage-label-text">Name</span>
+    <div class="form-control">
+      <label class="label">
+        <span class="label-text">Name</span>
       </label>
-      <input type="text" class="sage-input sage-input-bordered" placeholder="Enter name">
+      <input type="text" class="input input-bordered" placeholder="Enter name">
     </div>
     
-    <div class="sage-form-control mt-4">
-      <label class="sage-label">
-        <span class="sage-label-text">Email</span>
+    <div class="form-control mt-4">
+      <label class="label">
+        <span class="label-text">Email</span>
       </label>
-      <input type="email" class="sage-input sage-input-bordered" placeholder="Enter email">
+      <input type="email" class="input input-bordered" placeholder="Enter email">
     </div>
     
-    <div class="sage-form-control mt-4">
-      <label class="sage-label">
-        <span class="sage-label-text">Role</span>
+    <div class="form-control mt-4">
+      <label class="label">
+        <span class="label-text">Role</span>
       </label>
-      <select class="sage-select sage-select-bordered">
+      <select class="select select-bordered">
         <option disabled selected>Select role</option>
         <option value="admin">Admin</option>
         <option value="user">User</option>
@@ -114,8 +114,8 @@ Modals are dialog boxes that display content on top of the main page, typically 
     </div>
     
     <div class="modal-action mt-6">
-      <button class="sage-btn sage-btn-ghost">Cancel</button>
-      <button class="sage-btn sage-btn-primary">Save User</button>
+      <button class="btn btn-ghost">Cancel</button>
+      <button class="btn btn-primary">Save User</button>
     </div>
   </div>
 </div>
@@ -148,8 +148,8 @@ Modals are dialog boxes that display content on top of the main page, typically 
     </div>
     
     <div class="modal-action">
-      <button class="sage-btn sage-btn-ghost">Close</button>
-      <button class="sage-btn sage-btn-primary">Download</button>
+      <button class="btn btn-ghost">Close</button>
+      <button class="btn btn-primary">Download</button>
     </div>
   </div>
 </div>
@@ -167,7 +167,7 @@ Modals are dialog boxes that display content on top of the main page, typically 
     <p class="py-4">Click outside this modal or press ESC to close it.</p>
     
     <div class="modal-action">
-      <button class="sage-btn sage-btn-primary">Got it!</button>
+      <button class="btn btn-primary">Got it!</button>
     </div>
   </div>
   <label class="modal-backdrop"></label>
@@ -192,11 +192,11 @@ Modals are dialog boxes that display content on top of the main page, typically 
           it will take up most of the screen width and stack content vertically.
         </p>
         
-        <div class="sage-form-control">
-          <label class="sage-label">
-            <span class="sage-label-text">Field 1</span>
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text">Field 1</span>
           </label>
-          <input type="text" class="sage-input sage-input-bordered">
+          <input type="text" class="input input-bordered">
         </div>
       </div>
       
@@ -207,18 +207,18 @@ Modals are dialog boxes that display content on top of the main page, typically 
           for better space utilization.
         </p>
         
-        <div class="sage-form-control">
-          <label class="sage-label">
-            <span class="sage-label-text">Field 2</span>
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text">Field 2</span>
           </label>
-          <input type="text" class="sage-input sage-input-bordered">
+          <input type="text" class="input input-bordered">
         </div>
       </div>
     </div>
     
     <div class="modal-action">
-      <button class="sage-btn sage-btn-ghost">Cancel</button>
-      <button class="sage-btn sage-btn-primary">Save</button>
+      <button class="btn btn-ghost">Cancel</button>
+      <button class="btn btn-primary">Save</button>
     </div>
   </div>
 </div>
@@ -309,8 +309,8 @@ Modal.prompt({
     <h3 class="font-bold text-lg">First Modal</h3>
     <p class="py-4">This modal can open another modal.</p>
     <div class="modal-action">
-      <button class="sage-btn sage-btn-ghost" onclick="closeModal('first-modal')">Close</button>
-      <button class="sage-btn sage-btn-primary" onclick="openModal('second-modal')">Open Second Modal</button>
+      <button class="btn btn-ghost" onclick="closeModal('first-modal')">Close</button>
+      <button class="btn btn-primary" onclick="openModal('second-modal')">Open Second Modal</button>
     </div>
   </div>
 </div>
@@ -321,7 +321,7 @@ Modal.prompt({
     <h3 class="font-bold text-lg">Second Modal</h3>
     <p class="py-4">This is a nested modal opened from the first modal.</p>
     <div class="modal-action">
-      <button class="sage-btn sage-btn-primary" onclick="closeModal('second-modal')">Close</button>
+      <button class="btn btn-primary" onclick="closeModal('second-modal')">Close</button>
     </div>
   </div>
 </div>
@@ -376,36 +376,36 @@ function closeModal(modalId) {
     </div>
     
     <div class="space-y-4 mt-6">
-      <div class="sage-form-control">
+      <div class="form-control">
         <label class="cursor-pointer label">
           <span class="label-text">Enable notifications</span>
-          <input type="checkbox" class="sage-checkbox sage-checkbox-primary" checked>
+          <input type="checkbox" class="checkbox checkbox-primary" checked>
         </label>
       </div>
       
-      <div class="sage-form-control">
+      <div class="form-control">
         <label class="cursor-pointer label">
           <span class="label-text">Dark mode</span>
-          <input type="checkbox" class="sage-checkbox sage-checkbox-primary">
+          <input type="checkbox" class="checkbox checkbox-primary">
         </label>
       </div>
       
-      <div class="sage-form-control">
-        <label class="sage-label">
-          <span class="sage-label-text">Language</span>
+      <div class="form-control">
+        <label class="label">
+          <span class="label-text">Language</span>
         </label>
-        <select class="sage-select sage-select-bordered">
+        <select class="select select-bordered">
           <option value="en">English</option>
           <option value="es">Spanish</option>
           <option value="fr">French</option>
         </select>
       </div>
       
-      <div class="sage-form-control">
-        <label class="sage-label">
-          <span class="sage-label-text">Timezone</span>
+      <div class="form-control">
+        <label class="label">
+          <span class="label-text">Timezone</span>
         </label>
-        <select class="sage-select sage-select-bordered">
+        <select class="select select-bordered">
           <option value="utc">UTC</option>
           <option value="est">Eastern</option>
           <option value="pst">Pacific</option>
@@ -414,8 +414,8 @@ function closeModal(modalId) {
     </div>
     
     <div class="modal-action mt-8">
-      <button class="sage-btn sage-btn-ghost">Cancel</button>
-      <button class="sage-btn sage-btn-primary">Save Changes</button>
+      <button class="btn btn-ghost">Cancel</button>
+      <button class="btn btn-primary">Save Changes</button>
     </div>
   </div>
 </div>
@@ -445,7 +445,7 @@ function closeModal(modalId) {
       <div>
         <div class="flex items-start justify-between mb-2">
           <h3 class="text-2xl font-bold">Wireless Headphones</h3>
-          <div class="sage-badge sage-badge-success">In Stock</div>
+          <div class="badge badge-success">In Stock</div>
         </div>
         
         <div class="flex items-center gap-2 mb-4">
@@ -467,32 +467,32 @@ function closeModal(modalId) {
         </p>
         
         <div class="space-y-4">
-          <div class="sage-form-control">
-            <label class="sage-label">
-              <span class="sage-label-text">Color</span>
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text">Color</span>
             </label>
             <div class="flex gap-2">
-              <input type="radio" name="color" class="sage-radio sage-radio-primary" checked>
-              <input type="radio" name="color" class="sage-radio" style="--chkbg: #000000">
-              <input type="radio" name="color" class="sage-radio" style="--chkbg: #ffffff; --chkfg: #000000">
+              <input type="radio" name="color" class="radio radio-primary" checked>
+              <input type="radio" name="color" class="radio" style="--chkbg: #000000">
+              <input type="radio" name="color" class="radio" style="--chkbg: #ffffff; --chkfg: #000000">
             </div>
           </div>
           
-          <div class="sage-form-control">
-            <label class="sage-label">
-              <span class="sage-label-text">Quantity</span>
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text">Quantity</span>
             </label>
             <div class="flex items-center gap-2">
-              <button class="sage-btn sage-btn-outline sage-btn-sm">-</button>
-              <input type="number" class="sage-input sage-input-bordered sage-input-sm w-16 text-center" value="1">
-              <button class="sage-btn sage-btn-outline sage-btn-sm">+</button>
+              <button class="btn btn-outline btn-sm">-</button>
+              <input type="number" class="input input-bordered input-sm w-16 text-center" value="1">
+              <button class="btn btn-outline btn-sm">+</button>
             </div>
           </div>
         </div>
         
         <div class="flex gap-2 mt-6">
-          <button class="sage-btn sage-btn-primary flex-1">Add to Cart</button>
-          <button class="sage-btn sage-btn-outline sage-btn-square">
+          <button class="btn btn-primary flex-1">Add to Cart</button>
+          <button class="btn btn-outline btn-square">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
             </svg>

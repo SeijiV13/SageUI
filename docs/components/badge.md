@@ -102,30 +102,6 @@ Badges can be positioned on buttons to show counts or status indicators.
 </div>
 ```
 
-### On Avatars
-
-```html
-<!-- Badge on avatar -->
-<div class="relative">
-  <div class="sage-avatar">
-    <div class="w-12 rounded-full">
-      <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" alt="Avatar">
-    </div>
-  </div>
-  <div class="badge badge-sm badge-success absolute bottom-0 right-0"></div>
-</div>
-
-<!-- Status indicator -->
-<div class="relative">
-  <div class="avatar online">
-    <div class="w-16 rounded-full">
-      <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" alt="Avatar">
-    </div>
-  </div>
-  <div class="badge badge-sm badge-success absolute -bottom-1 -right-1">Online</div>
-</div>
-```
-
 ## Badge Groups
 
 Badge groups are useful for displaying multiple related tags or categories.
@@ -270,6 +246,26 @@ SageUI badges are designed with accessibility in mind:
 ## Examples
 
 ### Simple Product Badge
+<div class="demo-container">
+<div class="card w-96 bg-white shadow-lg">
+  <div class="card-body">
+    <div class="flex justify-between items-start">
+      <h3 class="card-title">Wireless Headphones</h3>
+      <span class="badge badge-success">New</span>
+    </div>
+    <div class="flex flex-wrap gap-2 mt-2">
+      <span class="badge badge-primary">Bluetooth</span>
+      <span class="badge badge-secondary">Noise Canceling</span>
+      <span class="badge badge-info">Wireless</span>
+    </div>
+    <div class="flex justify-between items-center mt-4">
+      <div class="text-2xl font-bold">$199.99</div>
+      <span class="badge badge-warning">15% OFF</span>
+    </div>
+  </div>
+</div>
+
+</div>
 
 ```html
 <div class="card w-96 bg-white shadow-lg">
@@ -295,12 +291,29 @@ SageUI badges are designed with accessibility in mind:
 
 ### Notification Example
 
+<div class="demo-container">
+<div class="bg-white rounded-lg shadow p-4 w-80">
+  <div class="flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <div class="w-8 h-8 rounded-full bg-100 flex items-center justify-center">
+        <span class="text-600 text-sm font-medium">J</span>
+      </div>
+      <div>
+        <div class="font-medium">New message from John</div>
+        <div class="text-sm text-gray-500">2 minutes ago</div>
+      </div>
+    </div>
+    <span class="badge badge-primary">New</span>
+  </div>
+</div>
+</div>
+
 ```html
 <div class="bg-white rounded-lg shadow p-4 w-80">
   <div class="flex justify-between items-center">
     <div class="flex items-center gap-3">
-      <div class="w-8 h-8 rounded-full bg-sage-100 flex items-center justify-center">
-        <span class="text-sage-600 text-sm font-medium">J</span>
+      <div class="w-8 h-8 rounded-full bg-100 flex items-center justify-center">
+        <span class="text-600 text-sm font-medium">J</span>
       </div>
       <div>
         <div class="font-medium">New message from John</div>

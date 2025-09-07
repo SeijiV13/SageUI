@@ -11,9 +11,9 @@ export interface InputProps {
 export const inputClasses = {
   base: 'input block w-full font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed',
   variants: {
-    default: 'border border-gray-300 bg-white text-gray-900 placeholder-gray-500 focus:border-sage-500 focus:ring-sage-500',
-    bordered: 'border-2 border-sage-300 bg-white text-gray-900 placeholder-gray-500 focus:border-sage-500 focus:ring-sage-500',
-    ghost: 'border-transparent bg-gray-50 text-gray-900 placeholder-gray-500 focus:bg-white focus:border-sage-500 focus:ring-sage-500'
+    default: 'border border-gray-300 bg-white text-gray-900 placeholder-gray-500 focus:border-500 focus:ring-500',
+    bordered: 'border-2 border-300 bg-white text-gray-900 placeholder-gray-500 focus:border-500 focus:ring-500',
+    ghost: 'border-transparent bg-gray-50 text-gray-900 placeholder-gray-500 focus:bg-white focus:border-500 focus:ring-500'
   },
   sizes: {
     sm: 'px-3 py-1.5 text-sm rounded-md',

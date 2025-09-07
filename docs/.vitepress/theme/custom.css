@@ -548,18 +548,18 @@ div[class*="language-"]:hover::before {
 }
 
 /* Input focus animations */
-.input, .textarea, .select, .sage-select {
+.input, .textarea, .select, .select {
   transition: all 0.3s ease;
   position: relative;
   background: #fff;
 }
 
-.input:focus, .textarea:focus, .select:focus, .sage-select:focus {
+.input:focus, .textarea:focus, .select:focus, .select:focus {
   transform: scale(1.02);
 }
 
 /* SageUI Select Component Styles */
-.sage-select {
+.select {
   display: block;
   width: 100%;
   font-weight: 500;
@@ -579,7 +579,7 @@ div[class*="language-"]:hover::before {
   background-size: 1.5em 1.5em;
 }
 
-.sage-select:focus {
+.select:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
   border-color: #22c55e;
@@ -587,13 +587,13 @@ div[class*="language-"]:hover::before {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%2322c55e' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
 }
 
-.sage-select:disabled {
+.select:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
 
 /* Select Sizes */
-.sage-select-sm {
+.select-sm {
   padding: 0.375rem 2.25rem 0.375rem 0.75rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -601,7 +601,7 @@ div[class*="language-"]:hover::before {
   background-size: 1.25em 1.25em;
 }
 
-.sage-select-lg {
+.select-lg {
   padding: 0.75rem 3rem 0.75rem 1.5rem;
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -610,77 +610,77 @@ div[class*="language-"]:hover::before {
 }
 
 /* Select Colors */
-.sage-select-primary {
+.select-primary {
   border-color: #86efac;
 }
 
-.sage-select-primary:focus {
+.select-primary:focus {
   border-color: #22c55e;
   box-shadow: 0 0 0 3px rgb(34 197 94 / 0.1);
 }
 
-.sage-select-secondary {
+.select-secondary {
   border-color: #bef264;
 }
 
-.sage-select-secondary:focus {
+.select-secondary:focus {
   border-color: #84cc16;
   box-shadow: 0 0 0 3px rgb(132 204 22 / 0.1);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%2384cc16' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
 }
 
-.sage-select-success {
+.select-success {
   border-color: #6ee7b7;
 }
 
-.sage-select-success:focus {
+.select-success:focus {
   border-color: #10b981;
   box-shadow: 0 0 0 3px rgb(16 185 129 / 0.1);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%2310b981' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
 }
 
-.sage-select-warning {
+.select-warning {
   border-color: #fcd34d;
 }
 
-.sage-select-warning:focus {
+.select-warning:focus {
   border-color: #f59e0b;
   box-shadow: 0 0 0 3px rgb(245 158 11 / 0.1);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23f59e0b' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
 }
 
-.sage-select-error {
+.select-error {
   border-color: #fca5a5;
 }
 
-.sage-select-error:focus {
+.select-error:focus {
   border-color: #ef4444;
   box-shadow: 0 0 0 3px rgb(239 68 68 / 0.1);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23ef4444' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
 }
 
 /* Select Variants */
-.sage-select-bordered {
+.select-bordered {
   border-width: 2px;
   border-color: #86efac;
 }
 
-.sage-select-bordered:focus {
+.select-bordered:focus {
   border-color: #22c55e;
 }
 
-.sage-select-ghost {
+.select-ghost {
   border-color: transparent;
   background-color: #f9fafb;
 }
 
-.sage-select-ghost:focus {
+.select-ghost:focus {
   background-color: white;
   border-color: #22c55e;
 }
 
 /* Multiple select styling */
-.sage-select[multiple] {
+.select[multiple] {
   background-image: none;
   padding-right: 0.75rem;
   padding-top: 0.75rem;
@@ -692,59 +692,59 @@ div[class*="language-"]:hover::before {
   scrollbar-color: #22c55e #f3f4f6;
 }
 
-.sage-select[multiple]::-webkit-scrollbar {
+.select[multiple]::-webkit-scrollbar {
   width: 6px;
 }
 
-.sage-select[multiple]::-webkit-scrollbar-track {
+.select[multiple]::-webkit-scrollbar-track {
   background: #f3f4f6;
   border-radius: 3px;
 }
 
-.sage-select[multiple]::-webkit-scrollbar-thumb {
+.select[multiple]::-webkit-scrollbar-thumb {
   background: #22c55e;
   border-radius: 3px;
 }
 
-.sage-select[multiple]::-webkit-scrollbar-thumb:hover {
+.select[multiple]::-webkit-scrollbar-thumb:hover {
   background: #16a34a;
 }
 
-.sage-select[multiple] option {
+.select[multiple] option {
   padding: 0.5rem 0.75rem;
   border-bottom: 1px solid #f3f4f6;
   transition: background-color 0.15s ease-in-out;
 }
 
-.sage-select[multiple] option:last-child {
+.select[multiple] option:last-child {
   border-bottom: none;
 }
 
-.sage-select[multiple] option:checked {
+.select[multiple] option:checked {
   background-color: #22c55e;
   color: white;
   font-weight: 500;
 }
 
-.sage-select[multiple] option:focus {
+.select[multiple] option:focus {
   background-color: #f0fdf4;
   outline: none;
 }
 
-.sage-select[multiple] option:hover {
+.select[multiple] option:hover {
   background-color: #f0fdf4;
 }
 
 /* Enhanced select styling for docs */
-.sage-select {
+.select {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.sage-select:focus {
+.select:focus {
   box-shadow: 0 4px 12px rgba(34, 197, 94, 0.15);
 }
 
-.sage-select:hover:not(:disabled) {
+.select:hover:not(:disabled) {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
@@ -903,7 +903,6 @@ body {
 .demo-container {
   position: relative;
   overflow: hidden;
-  animation: fadeInUp 0.6s ease-out, morphBorder 4s ease-in-out infinite;
 }
 
 .demo-container::after {
@@ -1220,13 +1219,13 @@ div[class*="language-"]:hover pre {
 }
 
 /* Form Controls Styling */
-.sage-form-control {
+.form-control {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.sage-form-control .label {
+.form-control .label {
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -1235,7 +1234,7 @@ div[class*="language-"]:hover pre {
   padding: 0.25rem 0;
 }
 
-.sage-form-control .label-text {
+.form-control .label-text {
   font-size: 0.875rem;
   font-weight: 500;
   color: #374151;
@@ -1243,14 +1242,14 @@ div[class*="language-"]:hover pre {
 }
 
 /* Override default label styling for better checkbox/radio alignment */
-.vp-doc .sage-form-control .label {
+.vp-doc .form-control .label {
   margin: 0;
   font-weight: normal;
 }
 
 /* Ensure checkbox and radio buttons align properly with their labels */
-.sage-checkbox,
-.sage-radio {
+.checkbox,
+.radio {
   margin: 0;
   flex-shrink: 0;
 }

@@ -477,7 +477,7 @@ SageUI cards are designed with accessibility in mind:
           <div class="flex items-center mt-2 text-xs text-gray-500">
             <span>2 hours ago</span>
             <span class="mx-2">•</span>
-            <button class="text-sage-600 hover:underline">Reply</button>
+            <button class="text-600 hover:underline">Reply</button>
           </div>
         </div>
       </div>
@@ -502,7 +502,7 @@ SageUI cards are designed with accessibility in mind:
         <div class="flex items-center mt-2 text-xs text-gray-500">
           <span>2 hours ago</span>
           <span class="mx-2">•</span>
-          <button class="text-sage-600 hover:underline">Reply</button>
+          <button class="text-600 hover:underline">Reply</button>
         </div>
       </div>
     </div>

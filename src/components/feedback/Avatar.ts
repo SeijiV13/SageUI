@@ -55,7 +55,7 @@ export class Avatar {
     
     if (this.config.initials) {
       return `
-        <div class="w-full h-full bg-sage-500 text-white flex items-center justify-center rounded-full font-medium">
+        <div class="w-full h-full bg-500 text-white flex items-center justify-center rounded-full font-medium">
           ${this.config.initials}
         </div>
       `;

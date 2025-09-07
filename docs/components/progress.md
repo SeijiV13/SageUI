@@ -4,17 +4,28 @@ Progress bars show the completion status of tasks or processes. They provide vis
 
 ## Basic Usage
 
+<div class="demo-container">
+<div class="progress">
+  <div class="progress-bar" style="width: 60%"></div>
+</div>
+</div>
+
 ```html
-<div class="sage-progress">
-  <div class="sage-progress-bar" style="width: 60%"></div>
+<div class="progress">
+  <div class="progress-bar" style="width: 60%"></div>
 </div>
 ```
 
 ## With Value
+<div class="demo-container">
+<div class="progress" data-value="75">
+  <div class="progress-bar" style="width: 75%"></div>
+</div>
+</div>
 
 ```html
-<div class="sage-progress" data-value="75">
-  <div class="sage-progress-bar" style="width: 75%"></div>
+<div class="progress" data-value="75">
+  <div class="progress-bar" style="width: 75%"></div>
 </div>
 ```
 
@@ -22,51 +33,96 @@ Progress bars show the completion status of tasks or processes. They provide vis
 
 Use size modifiers to create progress bars of different heights.
 
+<div class="demo-container">
+<div class="progress progress-sm">
+  <div class="progress-bar" style="width: 45%"></div>
+</div>
+ <br>
+<!-- Medium (default) -->
+<div class="progress">
+  <div class="progress-bar" style="width: 60%"></div>
+</div>
+<br>
+<!-- Large -->
+<div class="progress progress-lg">
+  <div class="progress-bar" style="width: 75%"></div>
+</div>
+</div>
+
 ```html
 <!-- Small -->
-<div class="sage-progress sage-progress-sm">
-  <div class="sage-progress-bar" style="width: 45%"></div>
+<div class="progress progress-sm">
+  <div class="progress-bar" style="width: 45%"></div>
 </div>
+<br>
 
 <!-- Medium (default) -->
-<div class="sage-progress">
-  <div class="sage-progress-bar" style="width: 60%"></div>
+<div class="progress">
+  <div class="progress-bar" style="width: 60%"></div>
 </div>
+<br>
 
 <!-- Large -->
-<div class="sage-progress sage-progress-lg">
-  <div class="sage-progress-bar" style="width: 75%"></div>
+<div class="progress progress-lg">
+  <div class="progress-bar" style="width: 75%"></div>
 </div>
 ```
 
 ## Colors
 
 Customize the progress bar color using color modifiers.
+<div class="demo-container">
+<!-- Primary (default) -->
+<div class="progress">
+  <div class="progress-bar" style="width: 60%"></div>
+</div>
+ <br>
+<!-- Secondary -->
+<div class="progress">
+  <div class="progress-bar progress-bar-secondary" style="width: 60%"></div>
+</div>
+ <br>
+<!-- Success -->
+<div class="progress">
+  <div class="progress-bar progress-bar-success" style="width: 60%"></div>
+</div>
+ <br>
+<!-- Warning -->
+<div class="progress">
+  <div class="progress-bar progress-bar-warning" style="width: 60%"></div>
+</div>
+ <br>
+<!-- Error -->
+<div class="progress">
+  <div class="progress-bar progress-bar-error" style="width: 60%"></div>
+</div>
+
+</div>
 
 ```html
 <!-- Primary (default) -->
-<div class="sage-progress">
-  <div class="sage-progress-bar" style="width: 60%"></div>
+<div class="progress">
+  <div class="progress-bar" style="width: 60%"></div>
 </div>
 
 <!-- Secondary -->
-<div class="sage-progress">
-  <div class="sage-progress-bar sage-progress-bar-secondary" style="width: 60%"></div>
+<div class="progress">
+  <div class="progress-bar progress-bar-secondary" style="width: 60%"></div>
 </div>
 
 <!-- Success -->
-<div class="sage-progress">
-  <div class="sage-progress-bar sage-progress-bar-success" style="width: 60%"></div>
+<div class="progress">
+  <div class="progress-bar progress-bar-success" style="width: 60%"></div>
 </div>
 
 <!-- Warning -->
-<div class="sage-progress">
-  <div class="sage-progress-bar sage-progress-bar-warning" style="width: 60%"></div>
+<div class="progress">
+  <div class="progress-bar progress-bar-warning" style="width: 60%"></div>
 </div>
 
 <!-- Error -->
-<div class="sage-progress">
-  <div class="sage-progress-bar sage-progress-bar-error" style="width: 60%"></div>
+<div class="progress">
+  <div class="progress-bar progress-bar-error" style="width: 60%"></div>
 </div>
 ```
 
@@ -74,21 +130,29 @@ Customize the progress bar color using color modifiers.
 
 Show progress percentage or custom text.
 
-```html
-<div class="sage-progress">
-  <div class="sage-progress-bar" style="width: 60%">
-    <span class="sage-progress-label">60%</span>
-  </div>
-</div>
-
 <!-- External label -->
+<div class="demo-container">
 <div>
   <div class="flex justify-between mb-1">
     <span class="text-sm font-medium">Downloading...</span>
-    <span class="text-sm text-sage-600">45%</span>
+    <span class="text-sm text-600">45%</span>
   </div>
-  <div class="sage-progress">
-    <div class="sage-progress-bar" style="width: 45%"></div>
+  <div class="progress">
+    <div class="progress-bar" style="width: 45%"></div>
+  </div>
+</div>
+
+</div>
+
+```html
+
+<div>
+  <div class="flex justify-between mb-1">
+    <span class="text-sm font-medium">Downloading...</span>
+    <span class="text-sm text-600">45%</span>
+  </div>
+  <div class="progress">
+    <div class="progress-bar" style="width: 45%"></div>
   </div>
 </div>
 ```
@@ -97,9 +161,15 @@ Show progress percentage or custom text.
 
 Add a striped pattern to the progress bar.
 
+<div class="demo-container">
+<div class="progress">
+  <div class="progress-bar progress-bar-striped" style="width: 60%"></div>
+</div>
+</div>
+
 ```html
-<div class="sage-progress">
-  <div class="sage-progress-bar sage-progress-bar-striped" style="width: 60%"></div>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped" style="width: 60%"></div>
 </div>
 ```
 
@@ -107,9 +177,15 @@ Add a striped pattern to the progress bar.
 
 Animate the stripes for active progress indication.
 
+<div class="demo-container">
+<div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%"></div>
+</div>
+</div>
+
 ```html
-<div class="sage-progress">
-  <div class="sage-progress-bar sage-progress-bar-striped sage-progress-bar-animated" style="width: 60%"></div>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%"></div>
 </div>
 ```
 
@@ -117,11 +193,19 @@ Animate the stripes for active progress indication.
 
 Stack multiple progress bars for complex progress visualization.
 
+<div class="demo-container">
+<div class="progress">
+  <div class="progress-bar progress-bar-success" style="width: 35%"></div>
+  <div class="progress-bar progress-bar-warning" style="width: 20%"></div>
+  <div class="progress-bar progress-bar-error" style="width: 10%"></div>
+</div>
+</div>
+
 ```html
-<div class="sage-progress">
-  <div class="sage-progress-bar sage-progress-bar-success" style="width: 35%"></div>
-  <div class="sage-progress-bar sage-progress-bar-warning" style="width: 20%"></div>
-  <div class="sage-progress-bar sage-progress-bar-error" style="width: 10%"></div>
+<div class="progress">
+  <div class="progress-bar progress-bar-success" style="width: 35%"></div>
+  <div class="progress-bar progress-bar-warning" style="width: 20%"></div>
+  <div class="progress-bar progress-bar-error" style="width: 10%"></div>
 </div>
 ```
 
@@ -162,17 +246,17 @@ progress.animateTo(75, 1000); // animate to 75% over 1 second
 
 | Class | Description |
 |-------|-------------|
-| `sage-progress` | Base progress container |
-| `sage-progress-bar` | Progress bar element |
-| `sage-progress-sm` | Small size |
-| `sage-progress-lg` | Large size |
-| `sage-progress-bar-secondary` | Secondary color |
-| `sage-progress-bar-success` | Success color |
-| `sage-progress-bar-warning` | Warning color |
-| `sage-progress-bar-error` | Error color |
-| `sage-progress-bar-striped` | Striped pattern |
-| `sage-progress-bar-animated` | Animated stripes |
-| `sage-progress-label` | Progress label text |
+| `progress` | Base progress container |
+| `progress-bar` | Progress bar element |
+| `progress-sm` | Small size |
+| `progress-lg` | Large size |
+| `progress-bar-secondary` | Secondary color |
+| `progress-bar-success` | Success color |
+| `progress-bar-warning` | Warning color |
+| `progress-bar-error` | Error color |
+| `progress-bar-striped` | Striped pattern |
+| `progress-bar-animated` | Animated stripes |
+| `progress-label` | Progress label text |
 
 ## Accessibility
 
@@ -181,14 +265,14 @@ progress.animateTo(75, 1000); // animate to 75% over 1 second
 - Include `aria-valuenow`, `aria-valuemin`, and `aria-valuemax`
 
 ```html
-<div class="sage-progress" 
+<div class="progress" 
      role="progressbar" 
      aria-valuenow="60" 
      aria-valuemin="0" 
      aria-valuemax="100"
      aria-label="Upload progress">
-  <div class="sage-progress-bar" style="width: 60%">
-    <span class="sage-progress-label">60%</span>
+  <div class="progress-bar" style="width: 60%">
+    <span class="progress-label">60%</span>
   </div>
 </div>
 ```
@@ -196,42 +280,79 @@ progress.animateTo(75, 1000); // animate to 75% over 1 second
 ## Examples
 
 ### File Upload Progress
+<div class="demo-container">
+<div class="space-y-2">
+  <div class="flex justify-between">
+    <span class="text-sm font-medium">Uploading document.pdf</span>
+    <span class="text-sm text-600">67%</span>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" 
+         style="width: 67%"></div>
+  </div>
+  <div class="text-xs text-500">2.3 MB of 3.4 MB</div>
+</div>
+</div>
 
 ```html
 <div class="space-y-2">
   <div class="flex justify-between">
     <span class="text-sm font-medium">Uploading document.pdf</span>
-    <span class="text-sm text-sage-600">67%</span>
+    <span class="text-sm text-600">67%</span>
   </div>
-  <div class="sage-progress">
-    <div class="sage-progress-bar sage-progress-bar-striped sage-progress-bar-animated" 
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" 
          style="width: 67%"></div>
   </div>
-  <div class="text-xs text-sage-500">2.3 MB of 3.4 MB</div>
+  <div class="text-xs text-500">2.3 MB of 3.4 MB</div>
 </div>
 ```
 
 ### Skill Level Indicator
 
-```html
+<div class="demo-container">
 <div class="space-y-4">
   <div>
     <div class="flex justify-between mb-1">
       <span class="font-medium">JavaScript</span>
-      <span class="text-sage-600">90%</span>
+      <span class="text-600">90%</span>
     </div>
-    <div class="sage-progress">
-      <div class="sage-progress-bar sage-progress-bar-success" style="width: 90%"></div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-success" style="width: 90%"></div>
     </div>
   </div>
   
   <div>
     <div class="flex justify-between mb-1">
       <span class="font-medium">Python</span>
-      <span class="text-sage-600">75%</span>
+      <span class="text-600">75%</span>
     </div>
-    <div class="sage-progress">
-      <div class="sage-progress-bar" style="width: 75%"></div>
+    <div class="progress">
+      <div class="progress-bar" style="width: 75%"></div>
+    </div>
+  </div>
+</div>
+</div>
+
+```html
+<div class="space-y-4">
+  <div>
+    <div class="flex justify-between mb-1">
+      <span class="font-medium">JavaScript</span>
+      <span class="text-600">90%</span>
+    </div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-success" style="width: 90%"></div>
+    </div>
+  </div>
+  
+  <div>
+    <div class="flex justify-between mb-1">
+      <span class="font-medium">Python</span>
+      <span class="text-600">75%</span>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" style="width: 75%"></div>
     </div>
   </div>
 </div>

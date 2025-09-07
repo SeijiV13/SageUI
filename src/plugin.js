@@ -91,7 +91,7 @@ module.exports = plugin(function({ addComponents, addUtilities, theme }) {
       border: `2px solid ${theme('colors.sage.200')}`
     },
     '.card-shadow': {
-      boxShadow: theme('boxShadow.sage-lg'),
+      boxShadow: theme('boxShadow.lg'),
       border: `1px solid ${theme('colors.gray.100')}`
     },
     '.card-body': {
@@ -178,7 +178,7 @@ module.exports = plugin(function({ addComponents, addUtilities, theme }) {
     '.shadow-sage': {
       boxShadow: `0 4px 6px -1px rgba(34, 197, 94, 0.1), 0 2px 4px -1px rgba(34, 197, 94, 0.06)`
     },
-    '.shadow-sage-lg': {
+    '.shadow-lg': {
       boxShadow: `0 10px 15px -3px rgba(34, 197, 94, 0.1), 0 4px 6px -2px rgba(34, 197, 94, 0.05)`
     }
   });
@@ -244,7 +244,7 @@ module.exports = plugin(function({ addComponents, addUtilities, theme }) {
       },
       boxShadow: {
         'sage': '0 4px 6px -1px rgba(34, 197, 94, 0.1), 0 2px 4px -1px rgba(34, 197, 94, 0.06)',
-        'sage-lg': '0 10px 15px -3px rgba(34, 197, 94, 0.1), 0 4px 6px -2px rgba(34, 197, 94, 0.05)'
+        'lg': '0 10px 15px -3px rgba(34, 197, 94, 0.1), 0 4px 6px -2px rgba(34, 197, 94, 0.05)'
       }
     }
   }

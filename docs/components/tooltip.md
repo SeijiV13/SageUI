@@ -6,16 +6,16 @@ Tooltips provide additional information when users hover over or focus on elemen
 
 ```html
 <!-- Basic tooltip -->
-<button class="sage-btn tooltip" data-tip="This is a tooltip">
+<button class="btn tooltip" data-tip="This is a tooltip">
   Hover me
 </button>
 
 <!-- Tooltip with different positions -->
 <div class="flex gap-4">
-  <button class="sage-btn tooltip tooltip-top" data-tip="Tooltip on top">Top</button>
-  <button class="sage-btn tooltip tooltip-right" data-tip="Tooltip on right">Right</button>
-  <button class="sage-btn tooltip tooltip-bottom" data-tip="Tooltip on bottom">Bottom</button>
-  <button class="sage-btn tooltip tooltip-left" data-tip="Tooltip on left">Left</button>
+  <button class="btn tooltip tooltip-top" data-tip="Tooltip on top">Top</button>
+  <button class="btn tooltip tooltip-right" data-tip="Tooltip on right">Right</button>
+  <button class="btn tooltip tooltip-bottom" data-tip="Tooltip on bottom">Bottom</button>
+  <button class="btn tooltip tooltip-left" data-tip="Tooltip on left">Left</button>
 </div>
 ```
 
@@ -25,38 +25,38 @@ Tooltips provide additional information when users hover over or focus on elemen
 
 ```html
 <!-- Primary tooltip -->
-<button class="sage-btn tooltip tooltip-primary" data-tip="Primary tooltip">Primary</button>
+<button class="btn tooltip tooltip-primary" data-tip="Primary tooltip">Primary</button>
 
 <!-- Secondary tooltip -->
-<button class="sage-btn tooltip tooltip-secondary" data-tip="Secondary tooltip">Secondary</button>
+<button class="btn tooltip tooltip-secondary" data-tip="Secondary tooltip">Secondary</button>
 
 <!-- Success tooltip -->
-<button class="sage-btn tooltip tooltip-success" data-tip="Success tooltip">Success</button>
+<button class="btn tooltip tooltip-success" data-tip="Success tooltip">Success</button>
 
 <!-- Warning tooltip -->
-<button class="sage-btn tooltip tooltip-warning" data-tip="Warning tooltip">Warning</button>
+<button class="btn tooltip tooltip-warning" data-tip="Warning tooltip">Warning</button>
 
 <!-- Error tooltip -->
-<button class="sage-btn tooltip tooltip-error" data-tip="Error tooltip">Error</button>
+<button class="btn tooltip tooltip-error" data-tip="Error tooltip">Error</button>
 
 <!-- Info tooltip -->
-<button class="sage-btn tooltip tooltip-info" data-tip="Info tooltip">Info</button>
+<button class="btn tooltip tooltip-info" data-tip="Info tooltip">Info</button>
 ```
 
 ### States
 
 ```html
 <!-- Always visible tooltip -->
-<button class="sage-btn tooltip tooltip-open" data-tip="This tooltip is always visible">
+<button class="btn tooltip tooltip-open" data-tip="This tooltip is always visible">
   Always Visible
 </button>
 
 <!-- Tooltip that appears on focus -->
-<input type="text" class="sage-input tooltip" data-tip="Enter your username" placeholder="Username">
+<input type="text" class="input tooltip" data-tip="Enter your username" placeholder="Username">
 
 <!-- Disabled element with tooltip -->
 <div class="tooltip" data-tip="This button is disabled">
-  <button class="sage-btn" disabled>Disabled Button</button>
+  <button class="btn" disabled>Disabled Button</button>
 </div>
 ```
 
@@ -64,12 +64,12 @@ Tooltips provide additional information when users hover over or focus on elemen
 
 ```html
 <!-- Multi-line tooltip -->
-<button class="sage-btn tooltip" data-tip="This is a longer tooltip that spans multiple lines and provides more detailed information about the element.">
+<button class="btn tooltip" data-tip="This is a longer tooltip that spans multiple lines and provides more detailed information about the element.">
   Long Tooltip
 </button>
 
 <!-- Tooltip with line breaks -->
-<button class="sage-btn tooltip" data-tip="Line 1&#10;Line 2&#10;Line 3">
+<button class="btn tooltip" data-tip="Line 1&#10;Line 2&#10;Line 3">
   Multi-line
 </button>
 ```
@@ -79,13 +79,13 @@ Tooltips provide additional information when users hover over or focus on elemen
 ```html
 <!-- Tooltip with HTML content (requires custom implementation) -->
 <div class="relative">
-  <button class="sage-btn" id="rich-tooltip-trigger">Rich Tooltip</button>
+  <button class="btn" id="rich-tooltip-trigger">Rich Tooltip</button>
   
   <!-- Custom tooltip content -->
   <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50" id="rich-tooltip">
     <div class="bg-base-300 text-base-content rounded-lg p-3 shadow-lg max-w-xs">
       <div class="flex items-center gap-2 mb-2">
-        <div class="sage-avatar">
+        <div class="avatar">
           <div class="w-6 rounded-full">
             <img src="avatar.jpg" alt="User">
           </div>
@@ -116,9 +116,9 @@ Tooltips provide additional information when users hover over or focus on elemen
 </div>
 
 <!-- Form field with help tooltip -->
-<div class="sage-form-control">
-  <label class="sage-label">
-    <span class="sage-label-text flex items-center gap-2">
+<div class="form-control">
+  <label class="label">
+    <span class="label-text flex items-center gap-2">
       Password
       <div class="tooltip tooltip-right" data-tip="Password must be at least 8 characters long and contain uppercase, lowercase, numbers, and special characters">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 cursor-help" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -127,14 +127,14 @@ Tooltips provide additional information when users hover over or focus on elemen
       </div>
     </span>
   </label>
-  <input type="password" class="sage-input sage-input-bordered">
+  <input type="password" class="input input-bordered">
 </div>
 
 <!-- Badge with tooltip -->
 <div class="flex items-center gap-2">
   <span>Status:</span>
   <div class="tooltip" data-tip="Last updated 5 minutes ago">
-    <div class="sage-badge sage-badge-success">Active</div>
+    <div class="badge badge-success">Active</div>
   </div>
 </div>
 ```
@@ -146,35 +146,35 @@ Tooltips provide additional information when users hover over or focus on elemen
 <div class="grid grid-cols-3 gap-4 p-8">
   <!-- Top row -->
   <div class="tooltip tooltip-bottom" data-tip="Positioned bottom due to space constraints">
-    <button class="sage-btn sage-btn-sm w-full">Top-Left</button>
+    <button class="btn btn-sm w-full">Top-Left</button>
   </div>
   <div class="tooltip tooltip-bottom" data-tip="Bottom tooltip">
-    <button class="sage-btn sage-btn-sm w-full">Top-Center</button>
+    <button class="btn btn-sm w-full">Top-Center</button>
   </div>
   <div class="tooltip tooltip-bottom" data-tip="Positioned bottom due to space constraints">
-    <button class="sage-btn sage-btn-sm w-full">Top-Right</button>
+    <button class="btn btn-sm w-full">Top-Right</button>
   </div>
   
   <!-- Middle row -->
   <div class="tooltip tooltip-right" data-tip="Right tooltip">
-    <button class="sage-btn sage-btn-sm w-full">Left</button>
+    <button class="btn btn-sm w-full">Left</button>
   </div>
   <div class="tooltip tooltip-top" data-tip="Center tooltip">
-    <button class="sage-btn sage-btn-sm w-full">Center</button>
+    <button class="btn btn-sm w-full">Center</button>
   </div>
   <div class="tooltip tooltip-left" data-tip="Left tooltip">
-    <button class="sage-btn sage-btn-sm w-full">Right</button>
+    <button class="btn btn-sm w-full">Right</button>
   </div>
   
   <!-- Bottom row -->
   <div class="tooltip tooltip-top" data-tip="Top tooltip">
-    <button class="sage-btn sage-btn-sm w-full">Bottom-Left</button>
+    <button class="btn btn-sm w-full">Bottom-Left</button>
   </div>
   <div class="tooltip tooltip-top" data-tip="Top tooltip">
-    <button class="sage-btn sage-btn-sm w-full">Bottom-Center</button>
+    <button class="btn btn-sm w-full">Bottom-Center</button>
   </div>
   <div class="tooltip tooltip-top" data-tip="Top tooltip">
-    <button class="sage-btn sage-btn-sm w-full">Bottom-Right</button>
+    <button class="btn btn-sm w-full">Bottom-Right</button>
   </div>
 </div>
 ```
@@ -275,20 +275,20 @@ Tooltip.setDefaults({
         <td>John Doe</td>
         <td>
           <div class="tooltip" data-tip="Account created on Jan 15, 2024. Last login: Today">
-            <div class="sage-badge sage-badge-success">Active</div>
+            <div class="badge badge-success">Active</div>
           </div>
         </td>
         <td>
           <div class="flex gap-1">
             <div class="tooltip" data-tip="Edit user details">
-              <button class="sage-btn sage-btn-ghost sage-btn-sm">
+              <button class="btn btn-ghost btn-sm">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
                 </svg>
               </button>
             </div>
             <div class="tooltip tooltip-error" data-tip="Delete user (cannot be undone)">
-              <button class="sage-btn sage-btn-ghost sage-btn-sm text-error">
+              <button class="btn btn-ghost btn-sm text-error">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                 </svg>
@@ -322,7 +322,7 @@ Tooltip.setDefaults({
       
       <div class="flex items-center gap-1 text-sm">
         <div class="tooltip tooltip-success" data-tip="Revenue increased by 12.5% compared to last month">
-          <div class="sage-badge sage-badge-success sage-badge-sm">+12.5%</div>
+          <div class="badge badge-success badge-sm">+12.5%</div>
         </div>
         <span class="text-base-content/70">vs last month</span>
       </div>
@@ -345,7 +345,7 @@ Tooltip.setDefaults({
       
       <div class="flex items-center gap-1 text-sm">
         <div class="tooltip tooltip-primary" data-tip="User count increased by 8.2% this month">
-          <div class="sage-badge sage-badge-primary sage-badge-sm">+8.2%</div>
+          <div class="badge badge-primary badge-sm">+8.2%</div>
         </div>
         <span class="text-base-content/70">vs last month</span>
       </div>
@@ -368,7 +368,7 @@ Tooltip.setDefaults({
       
       <div class="flex items-center gap-1 text-sm">
         <div class="tooltip tooltip-error" data-tip="Conversion rate decreased by 1.1% - needs attention">
-          <div class="sage-badge sage-badge-error sage-badge-sm">-1.1%</div>
+          <div class="badge badge-error badge-sm">-1.1%</div>
         </div>
         <span class="text-base-content/70">vs last month</span>
       </div>

@@ -6,9 +6,6 @@ hero:
   text: "Beautiful Tailwind CSS Components"
   tagline: "A free and open-source component library with a fresh green theme, built for modern web development. Create stunning interfaces with ease."
   image:
-    src: |
-       /assets/SageUITr.png
-    alt: SageUI Logo
   actions:
     - theme: brand
       text: Get Started
@@ -99,6 +96,9 @@ features:
 ---
 
 ## Why Choose SageUI?
+
+<img src="/assets/SageUITr.png" style="height: 300px;">
+
 
 SageUI combines the best of modern web development practices with thoughtful design. Built by developers, for developers, it provides everything you need to create beautiful, accessible, and performant user interfaces.
 

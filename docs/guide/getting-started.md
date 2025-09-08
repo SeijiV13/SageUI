@@ -6,12 +6,12 @@ Welcome to SageUI! This guide will help you get up and running with our beautifu
 
 SageUI is a comprehensive component library built on top of Tailwind CSS, featuring:
 
-- 🌿 **Nature-inspired design** with beautiful green color palettes
-- ♿ **Accessibility-first** approach following WCAG guidelines  
-- 🎨 **Fully customizable** with Tailwind CSS utilities
-- 📦 **Modular architecture** - import only what you need
-- 🚀 **Framework agnostic** - works with any JavaScript framework
-- 💪 **TypeScript support** with full type definitions
+- **Nature-inspired design** with beautiful green color palettes
+- **Accessibility-first** approach following WCAG guidelines  
+- **Fully customizable** with Tailwind CSS utilities
+- **Modular architecture** - import only what you need
+- **Framework agnostic** - works with any JavaScript framework
+- **TypeScript support** with full type definitions
 
 ## Quick Overview
 

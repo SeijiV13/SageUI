@@ -17,26 +17,6 @@ Interactive elements that trigger actions or behaviors.
     </div>
   </div>
 
-  <div class="example-card">
-    <h3><a href="/components/dropdown">Dropdown</a></h3>
-    <p>Toggleable contextual overlays for navigation and actions</p>
-    <div class="demo-section">
-      <div class="dropdown">
-        <button class="dropdown-trigger btn">
-          Actions
-          <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </button>
-        <div class="dropdown-menu">
-          <ul class="dropdown-content">
-            <li><a class="dropdown-item" href="#">Edit</a></li>
-            <li><a class="dropdown-item" href="#">Delete</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <div class="example-card">
     <h3><a href="/components/modal">Modal</a></h3>
@@ -264,7 +244,4 @@ Ready to start using these components? Check out our [installation guide](/guide
 | Avatar | ✅ Complete | ♿ WCAG AA | 📚 Full |
 | Badge | ✅ Complete | ♿ WCAG AA | 📚 Full |
 | Table | ✅ Complete | ♿ WCAG AA | 📚 Full |
-| Dropdown | ✅ Complete | ♿ WCAG AA | 📚 Full |
-| Modal | ✅ Complete | ♿ WCAG AA | 📚 Full |
-| Tooltip | ✅ Complete | ♿ WCAG AA | 📚 Full |
 | Loading | ✅ Complete | ♿ WCAG AA | 📚 Full |

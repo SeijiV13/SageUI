@@ -336,7 +336,7 @@ Browse our comprehensive [component library](/components/) to see all available 
 ### 2. Customization
 Learn how to [customize SageUI](/guide/customization) to match your brand colors and design requirements.
 
-### 3. Framework Integration
+<!-- ### 3. Framework Integration
 Check out detailed guides for your specific framework:
 - [React Integration](/guide/frameworks/react)
 - [Vue Integration](/guide/frameworks/vue)
@@ -346,7 +346,7 @@ Check out detailed guides for your specific framework:
 Start building your first project! Here are some ideas:
 - [Dashboard Example](/examples/dashboard)
 - [E-commerce Product Page](/examples/ecommerce)
-- [Blog Layout](/examples/blog)
+- [Blog Layout](/examples/blog) -->
 
 ## Getting Help
 

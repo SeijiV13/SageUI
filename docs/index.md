@@ -166,9 +166,9 @@ Join our growing community of developers and designers who are building the futu
 - **Twitter Updates**: Latest news and releases
 - **Contributing**: Help shape the future of SageUI
 
-## What's Next?
+<!-- ## What's Next?
 
-We're constantly improving SageUI based on community feedback and real-world usage. Check out our [roadmap](/roadmap) to see what's coming next, or [contribute](/contributing) to help us build the best component library for Tailwind CSS.
+We're constantly improving SageUI based on community feedback and real-world usage. Check out our [roadmap](/roadmap) to see what's coming next, or [contribute](/contributing) to help us build the best component library for Tailwind CSS. -->
 
 <style scoped>
 .component-showcase {

@@ -1,7 +1,7 @@
 export default {
   title: 'SageUI',
   description: 'A modern, accessible, and customizable component library for Tailwind CSS',
-  base: '/',
+  base: '/SageUI/',
   themeConfig: {
     logo: '/favicon.ico',
     nav: [

@@ -7,7 +7,7 @@ export default {
     nav: [
       { text: 'Guide', link: '/guide/getting-started' },
       { text: 'Components', link: '/components/' },
-      { text: 'GitHub', link: 'https://github.com/yourusername/sageui' }
+      { text: 'GitHub', link: 'https://github.com/SeijiV13/sageui' }
     ],
     sidebar: {
       '/guide/': [
@@ -56,18 +56,10 @@ export default {
             { text: 'Progress', link: '/components/progress' }
           ]
         },
-        {
-          text: 'Overlays',
-          items: [
-            { text: 'Modal', link: '/components/modal' },
-            { text: 'Tooltip', link: '/components/tooltip' },
-            { text: 'Dropdown', link: '/components/dropdown' }
-          ]
-        }
       ]
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/yourusername/sageui' }
+      { icon: 'github', link: 'https://github.com/SeijiV13/sageui' }
     ],
     footer: {
       message: 'Released under the MIT License.',

@@ -79,7 +79,6 @@ Import the CSS in your main stylesheet:
 - 🧭 **Navigation** - Navbar, breadcrumbs, pagination
 - 📊 **Data Display** - Tables, badges, avatars
 - 🔄 **Feedback** - Loading spinners, progress bars
-- 🎭 **Overlays** - Modals, tooltips, dropdowns
 
 ## Color Palette
 

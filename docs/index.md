@@ -21,7 +21,7 @@ hero:
       link: /playground
     - theme: alt
       text: GitHub
-      link: https://github.com/sageui/sageui
+      link: https://github.com/SeijiV13/sageui
 
 features:
   - icon: |

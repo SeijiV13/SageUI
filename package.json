@@ -1,6 +1,6 @@
 {
   "name": "@seijiv10/sageui",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A free and open-source component library for Tailwind CSS with beautiful green-themed components",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -31,7 +31,7 @@
       "types": "./dist/index.d.ts"
     },
     "./dist/sageui.css": "./dist/sageui.css",
-    "./sageui.css": "./dist/sageui.css"
+    "./styles": "./dist/styles/sageui.css"
   },
   "keywords": [
     "tailwindcss",
@@ -47,10 +47,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sageui/sageui.git"
+    "url": "https://github.com/SeijiV13/sageui.git"
   },
   "bugs": {
-    "url": "https://github.com/sageui/sageui/issues"
+    "url": "https://github.com/SeijiV13/sageui/issues"
   },
   "homepage": "https://sageui.dev",
   "devDependencies": {

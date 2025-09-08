@@ -510,7 +510,7 @@ Handle breaking changes between SageUI versions:
 
 ## Examples Repository
 
-Check out our [examples repository](https://github.com/sageui/examples) for:
+Check out our [examples repository](https://github.com/SeijiV13/sageui/examples) for:
 - Complete theme implementations
 - Framework-specific customizations  
 - Real-world use cases

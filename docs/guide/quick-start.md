@@ -331,5 +331,5 @@ Now that you understand the basics:
 
 - 📖 Browse the full [documentation](/components/)
 - 💬 Join our [Discord community](https://discord.gg/sageui)  
-- 🐛 Report issues on [GitHub](https://github.com/sageui/sageui)
+- 🐛 Report issues on [GitHub](https://github.com/SeijiV13/sageui)
 - 🐦 Follow us on [Twitter](https://twitter.com/sageui)

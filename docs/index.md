@@ -119,11 +119,11 @@ We understand the developer experience matters. That's why SageUI provides excel
 Get up and running with SageUI in minutes:
 
 ```bash
-npm install sageui
+npm install @seijiv10/sageui
 ```
 
 ```javascript
-import 'sageui/dist/sageui.css'
+import '@seijiv10/sageui/styles';
 import { Button, Alert, Card } from 'sageui'
 
 // Start building beautiful interfaces

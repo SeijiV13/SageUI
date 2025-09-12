@@ -7,21 +7,21 @@ A free and open-source component library for Tailwind CSS with beautiful green-t
 
 ## Features
 
-- 🌿 **Nature-inspired design** with green color palette
-- ⚡ **Built for Tailwind CSS** - seamless integration
-- 📦 **Modular components** - import only what you need
-- 🎨 **Customizable themes** - easy color and style customization
-- 📱 **Responsive design** - mobile-first approach
-- ♿ **Accessible** - ARIA compliant components
-- 🎯 **TypeScript support** - fully typed components
-- 📚 **Comprehensive documentation** - with live examples
+- **Nature-inspired design** with green color palette
+- **Built for Tailwind CSS** - seamless integration
+- **Modular components** - import only what you need
+- **Customizable themes** - easy color and style customization
+- **Responsive design** - mobile-first approach
+- **Accessible** - ARIA compliant components
+- **TypeScript support** - fully typed components
+- **Comprehensive documentation** - with live examples
 
 ## Quick Start
 
 ### Installation
 
 ```bash
-npm install sageui
+npm install @seijiv10/sageui
 # or
 yarn add sageui
 # or
@@ -30,24 +30,10 @@ pnpm add sageui
 
 ### Setup
 
-Add SageUI to your `tailwind.config.js`:
-
-```js
-module.exports = {
-  content: [
-    // ... your content paths
-    "./node_modules/sageui/**/*.{js,ts,jsx,tsx}"
-  ],
-  plugins: [
-    require('sageui/plugin')
-  ]
-}
-```
-
 Import the CSS in your main stylesheet:
 
 ```css
-@import 'sageui/dist/sageui.css';
+@import '@seijiv10/sageui/styles';
 ```
 
 ### Usage

@@ -31,20 +31,20 @@ Choose the installation method that works best for your project:
 Install SageUI as an npm package for the best developer experience:
 
 ```bash
-npm install sageui
+npm install @seijiv10/sageui
 ```
 
 Then import the CSS in your application:
 
 ```javascript
 // In your main JavaScript/TypeScript file
-import 'sageui/dist/sageui.css'
+import '@seijiv10/sageui/styles';
 ```
 
 Or in your CSS file:
 
 ```css
-@import 'sageui/dist/sageui.css';
+@import '@seijiv10/sageui/styles';;
 ```
 
 ### Method 2: CDN
@@ -63,7 +63,7 @@ For quick prototyping or simple projects, use our CDN:
 For maximum customization, use SageUI as a Tailwind CSS plugin:
 
 ```bash
-npm install sageui tailwindcss
+npm install @seijiv10/sageui tailwindcss
 ```
 
 Add to your `tailwind.config.js`:
@@ -184,6 +184,59 @@ Let's create a more complex component - a user profile card:
   </div>
 </div>
 ```
+
+<div class="demo-container">
+<div class="card" style="max-width: 400px;">
+  <div class="card-body">
+    <div class="flex items-center mb-4">
+      <div class="avatar mr-4">
+        <div class="avatar-image w-16 h-16">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=64&h=64&fit=crop&crop=face&auto=format&q=60" alt="Profile" />
+        </div>
+      </div>
+      <div>
+        <h3 class="card-title">John Doe</h3>
+        <p class="text-gray-600">Frontend Developer</p>
+      </div>
+    </div>
+    <p class="card-text">
+      Passionate about creating beautiful, accessible user interfaces 
+      with modern web technologies.
+    </p>
+    <div class="card-actions">
+      <button class="btn btn-primary btn-sm">Follow</button>
+      <button class="btn btn-ghost btn-sm">Message</button>
+    </div>
+  </div>
+</div>
+<div class="demo-container">
+  <div class="demo-title">Profile Card Result</div>
+  <div class="card" style="max-width: 400px;">
+    <div class="card-body">
+      <div class="flex items-center mb-4">
+        <div class="avatar mr-4">
+          <div class="avatar-image w-16 h-16">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=64&h=64&fit=crop&crop=face&auto=format&q=60" alt="Profile" />
+          </div>
+        </div>
+        <div>
+          <h3 class="card-title">John Doe</h3>
+          <p class="text-gray-600">Frontend Developer</p>
+        </div>
+      </div>
+      <p class="card-text">
+        Passionate about creating beautiful, accessible user interfaces 
+        with modern web technologies.
+      </p>
+      <div class="card-actions">
+        <button class="btn btn-primary btn-sm">Follow</button>
+        <button class="btn btn-ghost btn-sm">Message</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
 ## Framework Integration
 
 SageUI works seamlessly with all popular frameworks:
@@ -191,7 +244,7 @@ SageUI works seamlessly with all popular frameworks:
 ### React Example
 
 ```jsx
-import 'sageui/dist/sageui.css'
+import '@seijiv10/sageui/styles';
 
 function WelcomeCard() {
   const [isFollowing, setIsFollowing] = useState(false)
@@ -250,7 +303,7 @@ export default {
 </script>
 
 <style>
-@import 'sageui/dist/sageui.css';
+@import '@seijiv10/sageui/styles';
 </style>
 ```
 
@@ -336,17 +389,6 @@ Browse our comprehensive [component library](/components/) to see all available 
 ### 2. Customization
 Learn how to [customize SageUI](/guide/customization) to match your brand colors and design requirements.
 
-<!-- ### 3. Framework Integration
-Check out detailed guides for your specific framework:
-- [React Integration](/guide/frameworks/react)
-- [Vue Integration](/guide/frameworks/vue)
-- [Angular Integration](/guide/frameworks/angular)
-
-### 4. Build Something
-Start building your first project! Here are some ideas:
-- [Dashboard Example](/examples/dashboard)
-- [E-commerce Product Page](/examples/ecommerce)
-- [Blog Layout](/examples/blog) -->
 
 ## Getting Help
 

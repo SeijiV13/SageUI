@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-npm install sageui
+npm install @seijiv10/sageui
 # or
 yarn add sageui
 ```
@@ -29,7 +29,7 @@ module.exports = {
 
 ```css
 /* In your main CSS file */
-@import 'sageui/dist/sageui.css';
+@import '@seijiv10/sageui/styles';
 ```
 
 ### 3. Use Components

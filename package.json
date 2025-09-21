@@ -1,6 +1,6 @@
 {
   "name": "@seijiv10/sageui",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "A free and open-source component library for Tailwind CSS with beautiful green-themed components",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

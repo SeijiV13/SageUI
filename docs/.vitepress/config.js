@@ -7,6 +7,8 @@ export default {
     nav: [
       { text: 'Guide', link: '/guide/getting-started' },
       { text: 'Components', link: '/components/' },
+      { text: 'Roadmap', link: '/roadmap' },
+      { text: 'Playground', link: '/playground' },
       { text: 'GitHub', link: 'https://github.com/SeijiV13/sageui' }
     ],
     sidebar: {

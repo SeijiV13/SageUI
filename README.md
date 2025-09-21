@@ -101,7 +101,7 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 
 ```bash
 # Clone the repository
-git clone https://github.com/sageui/sageui.git
+git clone https://github.com/SeijiV13/sageui.git
 cd sageui
 
 # Install dependencies
@@ -123,8 +123,8 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ## Support
 
-- 🐛 [Report bugs](https://github.com/sageui/sageui/issues)
-- 💬 [Discussions](https://github.com/sageui/sageui/discussions)
+- 🐛 [Report bugs](https://github.com/SeijiV13/sageui/issues)
+- 💬 [Discussions](https://github.com/SeijiV13/sageui/discussions)
 - 📧 [Email support](mailto:support@sageui.dev)
 
 ---

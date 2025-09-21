@@ -6,20 +6,6 @@ hero:
   text: "Beautiful Tailwind CSS Components"
   tagline: "A free and open-source component library with a fresh green theme, built for modern web development. Create stunning interfaces with ease."
   image:
-  actions:
-    - theme: brand
-      text: Get Started
-      link: /guide/getting-started
-    - theme: alt
-      text: View Components
-      link: /components/
-    - theme: alt
-      text: Playground
-      link: /playground
-    - theme: alt
-      text: GitHub
-      link: https://github.com/SeijiV13/sageui
-
 features:
   - icon: |
       <svg class="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
@@ -97,22 +83,184 @@ features:
 
 ## Why Choose SageUI?
 
-<img src="/assets/SageUITr.png" style="height: 300px;">
-
+<div class="flex justify-center my-8">
+  <img src="/assets/SageUITr.png" alt="SageUI Logo" class="h-64 transition-transform duration-300 hover:scale-105">
+</div>
 
 SageUI combines the best of modern web development practices with thoughtful design. Built by developers, for developers, it provides everything you need to create beautiful, accessible, and performant user interfaces.
 
-### 🎨 **Design Philosophy**
+### **Design Philosophy**
 
-Our design system is built around the concept of natural growth and harmony. The green color palette isn't just aesthetically pleasing—it's scientifically proven to reduce eye strain and create a calming user experience.
+<div class="flex items-start gap-4 p-6 bg-gradient-to-br from-emerald-50 to-green-50 rounded-lg border border-emerald-200 mb-6">
+  <div class="flex-shrink-0 p-3 bg-emerald-100 rounded-lg">
+    <svg class="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"/>
+    </svg>
+  </div>
+  <div>
+    <p class="text-emerald-900 font-medium">Our design system is built around the concept of natural growth and harmony. The green color palette isn't just aesthetically pleasing—it's scientifically proven to reduce eye strain and create a calming user experience.</p>
+  </div>
+</div>
 
-### ⚡ **Performance Focused**
+### **Performance Focused**
 
-Every component is optimized for performance with minimal CSS footprint, tree-shaking support, and efficient rendering. Your applications stay fast while looking great.
+<div class="flex items-start gap-4 p-6 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg border border-blue-200 mb-6">
+  <div class="flex-shrink-0 p-3 bg-blue-100 rounded-lg">
+    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5 10.5 6.75l4.5 4.5 6.75-6.75"/>
+      <path stroke-linecap="round" stroke-linejoin="round" d="m14.25 6.75 6.75-6.75v6.75h-6.75Z"/>
+    </svg>
+  </div>
+  <div>
+    <p class="text-blue-900 font-medium">Every component is optimized for performance with minimal CSS footprint, tree-shaking support, and efficient rendering. Your applications stay fast while looking great.</p>
+  </div>
+</div>
 
-### 🛠️ **Developer First**
+### **Developer First**
 
-We understand the developer experience matters. That's why SageUI provides excellent TypeScript support, comprehensive documentation, and intuitive APIs that make development a joy.
+<div class="flex items-start gap-4 p-6 bg-gradient-to-br from-purple-50 to-violet-50 rounded-lg border border-purple-200 mb-6">
+  <div class="flex-shrink-0 p-3 bg-purple-100 rounded-lg">
+    <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/>
+    </svg>
+  </div>
+  <div>
+    <p class="text-purple-900 font-medium">We understand the developer experience matters. That's why SageUI provides excellent TypeScript support, comprehensive documentation, and intuitive APIs that make development a joy.</p>
+  </div>
+</div>
+
+## Live Component Examples
+
+<div class="my-8 p-6 bg-50 border border-200 rounded-lg">
+
+### Interactive Buttons
+
+<div class="space-y-4 p-4 bg-white rounded-lg shadow-sm">
+  <div class="flex flex-wrap gap-4">
+    <button class="btn btn-primary">Primary Button</button>
+    <button class="btn btn-secondary">Secondary</button>
+    <button class="btn btn-outline">Outline</button>
+    <button class="btn btn-ghost">Ghost</button>
+  </div>
+</div>
+
+### Cards & Layout
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+  <div class="card transition-transform hover:scale-105">
+    <div class="card-body">
+      <div class="flex justify-between items-start mb-4">
+        <h3 class="card-title">Feature Card</h3>
+        <span class="badge badge-success">New</span>
+      </div>
+      <p class="mb-4">Beautiful card component with hover animations and clean typography.</p>
+      <div class="card-actions">
+        <button class="btn btn-sm btn-primary">Learn More</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card card-bordered transition-transform hover:scale-105">
+    <div class="card-body">
+      <div class="flex justify-between items-start mb-4">
+        <h3 class="card-title">Analytics</h3>
+        <div class="relative">
+          <div class="w-12 h-12 bg-100 rounded-full flex items-center justify-center">
+            <span class="text-sm font-bold text-600">75%</span>
+          </div>
+        </div>
+      </div>
+      <p class="mb-4">Real-time progress indicators with smooth animations.</p>
+      <div class="progress">
+        <div class="progress-bar progress-bar-success" style="width: 75%"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card card-compact transition-transform hover:scale-105">
+    <div class="card-body">
+      <h3 class="card-title">Notifications</h3>
+      <div class="alert alert-success mt-4">
+        <span>✓</span>
+        <div>
+          <p class="font-medium">Deploy Successful</p>
+          <p class="text-sm opacity-70">Your app is now live</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+### Alerts & Feedback
+
+<div class="space-y-4 p-4 bg-white rounded-lg shadow-sm">
+  <div class="alert alert-success">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+    </svg>
+    <span>Success! Your changes have been saved successfully.</span>
+  </div>
+
+  <div class="alert alert-warning">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01"></path>
+    </svg>
+    <span>Warning! Please check your input and try again.</span>
+  </div>
+
+  <div class="alert alert-error">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+    </svg>
+    <span>Error! Something went wrong. Please try again.</span>
+  </div>
+
+  <div class="alert alert-info">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01"></path>
+    </svg>
+    <span>Info! Here's some helpful information for you.</span>
+  </div>
+</div>
+
+### Badges & Loading States
+
+<div class="space-y-6 p-4 bg-white rounded-lg shadow-sm">
+  <div class="space-y-3">
+    <h4 class="font-semibold">Badges</h4>
+    <div class="flex flex-wrap gap-2">
+      <span class="badge badge-primary">Primary</span>
+      <span class="badge badge-secondary">Secondary</span>
+      <span class="badge badge-success">Success</span>
+      <span class="badge badge-warning">Warning</span>
+      <span class="badge badge-error">Error</span>
+      <span class="badge badge-info">Info</span>
+    </div>
+  </div>
+
+  <div class="space-y-3">
+    <h4 class="font-semibold">Loading Spinners</h4>
+    <div class="flex items-center gap-6">
+      <div class="spinner-sm"></div>
+      <div class="spinner-md"></div>
+      <div class="spinner-lg"></div>
+    </div>
+  </div>
+
+  <div class="space-y-3">
+    <h4 class="font-semibold">Progress Bars</h4>
+    <div class="space-y-2">
+      <div class="progress">
+        <div class="progress-bar" style="width: 60%"></div>
+      </div>
+      <div class="progress progress-sm">
+        <div class="progress-bar progress-bar-success" style="width: 80%"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
 
 ## Quick Start
 
@@ -166,9 +314,46 @@ Join our growing community of developers and designers who are building the futu
 - **Twitter Updates**: Latest news and releases
 - **Contributing**: Help shape the future of SageUI
 
-<!-- ## What's Next?
+### Support the Project
 
-We're constantly improving SageUI based on community feedback and real-world usage. Check out our [roadmap](/roadmap) to see what's coming next, or [contribute](/contributing) to help us build the best component library for Tailwind CSS. -->
+Help us keep SageUI free and open-source by supporting our development efforts:
+
+<div class="flex flex-wrap gap-4 mt-6 mb-8">
+  <a 
+    href="https://github.com/sponsors/SeijiV13" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    class="btn btn-primary inline-flex items-center gap-2"
+  >
+    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+    </svg>
+    Sponsor on GitHub
+  </a>
+  <a 
+    href="https://ko-fi.com/seijiv13" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    class="btn btn-outline inline-flex items-center gap-2"
+  >
+    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.017 2.589-2.993 2.589-2.993s.098-4.557.098-7.857c0 0 .773-.977.773-1.94 0-.964-.773-1.94-.773-1.94s4.859.772 6.68-.028c1.821-.8 1.821-3.026 1.821-3.026l-.082-1.509c0-.954-.705-1.357-.705-1.357z"/>
+    </svg>
+    Support on Ko-fi
+  </a>
+</div>
+<div class="p-4 bg-50 border border-200 rounded-lg">
+  <p class="text-sm text-600 mb-2">
+    <strong>Why support SageUI?</strong>
+  </p>
+  <ul class="text-sm text-700 space-y-1 list-disc list-inside">
+    <li>Keep the library free and open-source</li>
+    <li>Fund new feature development and improvements</li>
+    <li>Support comprehensive documentation and examples</li>
+    <li>Enable faster bug fixes and community support</li>
+  </ul>
+</div>
+
 
 <style scoped>
 .component-showcase {
@@ -199,17 +384,11 @@ We're constantly improving SageUI based on community feedback and real-world usa
 }
 </style>
 
-### Alerts
-<div class="alert alert-success">
-  <span>✅</span>
-  <span>Success! Your changes have been saved.</span>
-</div>
-
 ## Get Started
 
-Ready to build something amazing? Check out our [installation guide](/guide/installation) or explore our [component library](/components/button).
+Ready to build something amazing? Check out our [installation guide](./guide/installation) or explore our [component library](./components/button).
 
 <div class="flex gap-4 mt-8">
-  <a href="/guide/installation" class="btn btn-primary text-white">Get Started</a>
-  <a href="/components/button" class="btn btn-outline">View Components</a>
+  <a href="./guide/installation" class="btn btn-primary text-white">Get Started</a>
+  <a href="./components/button" class="btn btn-outline">View Components</a>
 </div>
